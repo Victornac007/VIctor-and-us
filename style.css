@@ -4,6 +4,18 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+ul{
+    list-style: none;
+    list-style-type: none;
+}
+h2 , h3 , h4 , h6 , p{
+    text-align: center;
+}
+p{
+    max-width: 500px;
+    margin: auto;
+    line-height: 1.7;
+}
 /* COMIENZO DEL HEADER */
 header{
     background-image: url(./Media/concepto_papa08.png);
@@ -116,18 +128,37 @@ main{
 .home_sld{
     width: 100%;
 }
-ul{
-    list-style: none;
-    list-style-type: none;
+/* COMIENZO DE ACORDERON DE INDEX */
+.contenedor__acordeon{
+    max-width: 800px;
+    margin: 5px auto;
 }
-h2 , h3 , h4 , h6 , p{
-    text-align: center;
+.acordeon_item p{
+    background-color: #ffffffd9;
+    backdrop-filter: blur(4px);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    font-size: large;
 }
-p{
-    max-width: 500px;
-    margin: auto;
-    line-height: 1.5;
+.contenedor__acordeon__quinto--item_background{
+    background-image: url(./Media/cencosud-02.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+.contenedor__acordeon__cuarto--item_background{
+    background-image: url(./Media/Banco-itau-02.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.contenedor__acordeon__cuarto--item_background p{
+    text-align: left;
+    margin-left: 3rem;
+    background-color: #ffffff3d;
+    font-weight: 500;
+    font-size: large;
+}
+
 iframe{
     border-radius: 3rem;
 }
