@@ -121,7 +121,7 @@ header{
 /* FIN DEL HEADER */
 /* COMIENZO DEL MAIN INDEX */
 main{
-    background-color:rgba(225, 144, 46, 0.96);
+    background-color:rgba(225, 144, 46, 0);
     backdrop-filter: blur(3px);
 
 }
@@ -159,9 +159,36 @@ main{
     font-size: large;
 }
 
-iframe{
-    border-radius: 3rem;
+/* COMIENZO DE SECCION COTIZAR Y FORMULARIO */
+.contenedor__cotizar__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
 }
+.contenedor__cotizar__texto div{
+    display: flex;
+    flex-direction: row;
+}
+.img__cotizar{
+    max-width:50px;
+    margin-bottom: 15px;
+}
+/* FIN DE  SECCION COTIZAR Y FORMULARIO */
+/* COMIENZO DE UBICACIÓN INDEX */
+.contenedor__direccion_index--texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.contenedor__direccion_index--mapa{
+    margin: 0 auto;
+}
+/* FIN DE UBICACION INDEX */
 /* COMIENZO DEL FOOTER */
 footer{
     background-image: url(./Media/concepto_papa11.png);
