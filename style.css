@@ -17,15 +17,29 @@ p{
     line-height: 1.7;
 }
 /* COMIENZO DEL HEADER */
-header{
+.contenedor__header{
     background-image: url(./Media/concepto_papa08.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 660px;
+    height: 860px;
     width: 100%;
+    position: relative;
 }
-
+.header__index-video-background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url(./Media/concepto_papa08.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: hidden;
+}
 /* COMIENZO DEL NAV */
 .menu-var{
     background-color: white;
@@ -38,7 +52,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 10;
+    z-index: 2;
 }
 .nav-logo{
     font-size: 1.5rem;
@@ -78,15 +92,16 @@ header{
 /* FIN DEL NAV */
 .contenedor__cards_home{
     width: 100%;
-    height: 100%;
+    height: 10%;
     padding: 1.5rem;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    backdrop-filter: blur(3px);
-    background-color: #030101c9;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.567);
 }
 .contenedor__cards_home h3{
     text-align: start;
@@ -101,11 +116,23 @@ header{
 }
 /* FIN DEL HEADER */
 /* COMIENZO DEL MAIN INDEX */
-.home_sld{
-    width: 100%;
+.container__home__presentacion{
+    max-width: 1270px;
 }
+.home__presentacion_texto{
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+    background-color: #e7e7e79b;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+.home__presentacion_texto h2{
+    font-weight: bold;
+
+}
+
 /* COMIENZO DE ACORDERON DE INDEX */
-.contenedor__home__elegirnos h2{
+.contenedor__home__elegirnos{
     font-weight: bold;
     backdrop-filter: blur(6px);
     padding: 1rem;
@@ -127,6 +154,7 @@ header{
     position: relative;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
 }
 .video__background{
     position: absolute;
@@ -138,6 +166,10 @@ header{
     height: auto;
     z-index: -1;
     background-size: cover;
+}
+.contenedor__acordeon{
+    box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+    border-radius: 2rem;
 }
 .contenedor__acordeon__primer--item_background{
     background-image: url(./Media/concepto_papa07.png);
@@ -179,6 +211,7 @@ header{
 /* COMIENZO DE SECCION COTIZAR Y FORMULARIO */
 .container__cotizar{
     background-color: rgb(255, 136, 0);
+    box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
 }
 .contenedor__cotizar__texto{
     display: flex;
@@ -237,6 +270,7 @@ header{
     padding: 1rem;
     border-radius: 2rem;
     position: relative;
+    
 }
 
 @media screen and (min-width:992px) {
