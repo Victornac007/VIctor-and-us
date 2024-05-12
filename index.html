@@ -11,56 +11,48 @@
     <link rel="shortcut icon" href="./Media/letra-v.png" type="image/x-icon">
 </head>
 <body>
+  
     <header>
-        <!-- <article class="contenedor__header--top"> 
-            <div class="contenedor__header--top--text">
-                <p>"Acá comentarios de diversos clientes"..</p>
+      <nav class="menu-var navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand nav-logo" href="./index.html">
+              VICTOR & US
+          </a>
+          <button class="navbar-toggler nav-bar-menu " type="button" data-bs-toggle="offcanvas"         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle    navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">VICTOR & US</h5>
+                <button type="button" class="btn-close btn-cerrar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="contenedor__header--top--logos contenedor__logos">
-                <a href=""><img src="./Media/facebook.png" alt=""></a>
-                <a href="../"><img src="./Media/instagram.png" alt=""></a>
-                <a href=""><img src="./Media/whatsapp.png" alt=""></a>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="link-nav nav-link active mx-lg-2" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="link-nav nav-link mx-lg-2" href="./Pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link-nav nav-link mx-lg-2" href="./Pages/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link-nav nav-link mx-lg-2" href="./Pages/clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link-nav nav-link mx-lg-2" href="./Pages/contacto.html">Contacto</a>
+                  </li>
+              </ul>
             </div>
-        </article> -->
-        <nav class="menu-var navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <a class="navbar-brand nav-logo" href="./index.html">
-                    VICTOR & US
-                </a>
-                <button class="navbar-toggler nav-bar-menu " type="button" data-bs-toggle="offcanvas"         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle    navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">VICTOR & US</h5>
-                    <button type="button" class="btn-close btn-cerrar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="link-nav nav-link active mx-lg-2" aria-current="page" href="./index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="link-nav nav-link mx-lg-2" href="./Pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link-nav nav-link mx-lg-2" href="./Pages/servicios.html">Servicios</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="link-nav nav-link mx-lg-2" href="./Pages/clientes.html">Clientes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="link-nav nav-link mx-lg-2" href="./Pages/contacto.html">Contacto</a>
-                      </li>
-                  </ul>
-                </div>
-                </div>
-            </div>
-        </nav>
-        <div class="contenedor__cards_home">
-                <h1>Fabricación e Instalación de Cortinas Metálicas</h1>
-                <h5>Màs de 30 Años de Experiencia, La mas grande alianza con las empresas de todo chile</h5>
+          </div>
         </div>
+      </nav>
+      <div class="col-lg-4 col-md-4 col-sm-12 contenedor__cards_home">
+        <h1 class="contenedor__cards_home-text">Fabricación e Instalación de Cortinas Metálicas</h1>
+        <br>
+        <h3 class="contenedor__cards_home-text">Màs de 30 Años de Experiencia, La mas grande alianza con las empresas de todo chile</h3>
+      </div>  
         <br>
         <br>
         <br>
@@ -108,11 +100,12 @@
         </article>
         <article class="contenedor__home__elegirnos">
           <h2>¿Por qué elegirnos es la mejor opción?</h2>
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
         </article>
-        <article class="contenedor__acordeon">
+        <section class="contenedor__acordeon__background__video">
+          <video autoplay muted loop id="video-background" class="video__background">
+            <source src="./Media/video_fondo-01.mp4" type="video/mp4">
+          </video>
+          <article class="contenedor__acordeon  ">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -120,8 +113,8 @@
                     Experiencia y Profesionalismo
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                  <div class="accordion-body acordeon_item">
+                <div id="collapseOne" class="accordion-collapse collapse show  " data-bs-parent="#accordionExample">
+                  <div class="accordion-body acordeon_item contenedor__acordeon__primer--item_background">
                     <p>
                       <strong>Contamos con años de experiencia en el rubro!</strong> lo que nos permite ofrecer un servicio de alta calidad y profesionalismo en cada instalación y mantenimiento de cortinas metálicas de seguridad.
                     </p>
@@ -135,7 +128,7 @@
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body  acordeon_item">
+                  <div class="accordion-body  acordeon_item contenedor__acordeon__segundo--item_background">
                     <p>
                       <strong>En Victor&us nos preocupamos por cada uno de nuestros clientes</strong>, brindando una atención personalizada y adaptada a las necesidades específicas de cada marca, garantizando su <strong>satisfacción en todo momento.</strong>
                     </p>
@@ -150,7 +143,7 @@
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body  acordeon_item">
+                  <div class="accordion-body  acordeon_item contenedor__acordeon__tercer--item_background">
                     <p>
                       <strong>Utilizamos materiales de primera calidad </strong> en todas nuestras instalaciones y mantenimientos, asegurando la durabilidad y eficacia de las cortinas metálicas de seguridad para proteger los establecimientos de las marcas más importantes de Chile.
                     </p>
@@ -164,7 +157,7 @@
                   </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body contenedor__acordeon__cuarto--item_background acordeon_item">
+                  <div class="accordion-body  contenedor__acordeon__cuarto--item_background acordeon_item">
                     <p>
                       Nuestro equipo altamente capacitado se caracteriza por su <strong>rapidez y eficiencia </strong>en cada trabajo realizado, asegurando la pronta instalación y mantenimiento de las cortinas metálicas de seguridad sin descuidar la calidad del servicio.
                     </p>
@@ -188,51 +181,82 @@
               </div>
             </div>
         </article>
-        <article class="container">
-          <div class="row">
-            <div class="col">
-              <p>Obtén un 5% de descuento en tu primera compra al contado</p>
-            </div>
-            <div class="col">
-              <!-- AQUI UN BOTON QUE LLAME A OFFVANVAS CON EL FORMULARIO -->
-            </div>
-          </div>
-
-        </article>
-        <article class="col container container__cotizar">
+        </section>
+        
+        <article class="container-fluid container__cotizar">
+          <br>
               <div class="row">
-                <div class="col contenedor__cotizar__texto ">
-                  <div>
-                    <h2>¡COTIZA AHORA! </h2> <img class="img__cotizar" src="./Media/buscar-dinero.gif" alt=" icono animado de lupa buscando dniero">
+                <div class="col-lg-5 col-md-5 col-sm-12 contenedor__cotizar__texto ">
+                  <div class="contenedor__cotizar_text">
+                    <h2>¡COTIZA AHORA! Y OBTEN UN <strong>5% DE DESCUENTO</strong>  </h2> 
                   </div>
-                  <div>
-                    <h3>EL MEJOR SERVICIO</h3>
-                    <img class="img__cotizar" src="./Media/controlar.gif" alt="">
-                  </div>
-                  <div>
-                    <h4>LA MEJOR GARANTIA</h4>
-                    <img class="img__cotizar" src="./Media/mejor-vendido.gif" alt="">
+                  <div class="contenedor__cotizar_text">
+                    <h3>EN TU PRIMERA COMPRA AL CONTADOR</h3>
                   </div>
                 </div>
+                <div class="col contenedor__cotizar__form">
+                  <form class="p-4 contenedor__formulario_index">
+                    <div class="row g-3">
+                      <div class="col">
+                        <input type="text" class="form-control imput_form" placeholder="Nombre" aria-label="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control imput_form" placeholder="Apellido" aria-label="Last name">
+                      </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                      <input type="email" class="form-control imput_form" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control imput_form" id="inputCity" placeholder="Ciudad">
+                      </div>
+                      <br>
+                      <div class="col-md-6">
+                        <input  type="number" class="form-control imput_form" id="inputNumber" placeholder="Teléfono">
+                      </div>
+                    </div>
+                    <br>
+                    <div class="col-md-8">
+                      <label for="inputState" class="form-label imput_form">¿Para que buscas el servicio?</label>
+                      <select id="inputState" class="form-select imput_form">
+                        <option selected>Para mi negocio</option>
+                        <option>Para centro comercial</option>
+                        <option>Para supermercados</option>
+                        <option>Otro</option>
+                      </select>
+                    </div>
+                   <br>
+                    <div class="col-12">
+                      <button type="submit" class="btn  boton_form">QUIERO MI DESCUENTO</button>
+                    </div>
+                  </form>
+                </div>
               </div>
+              <br>
         </article>
-        <article class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12  contenedor__direccion_index--texto">
-              <h2>Dirección:</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, autem. Lorem ipsum dolor sit amet.
-              </p>
+        <article class="container-fluid contenedor__ubicacion">
+          <video autoplay muted loop class="contenedor__video_ubicacion" id="video-background">
+            <source src="./Media/video_chile_horizontal.mp4" type="video/mp4">
+          </video>
+          <div class="row contenedor__ubicacion__backdrop">
+            <div class="col-lg-6 col-md-12 col-sm-12  contenedor__direccion_index--texto">
               <p>
                 Calle principal N° 123, Colonia Central, C.P. 12345
               </p>
+              <p>
+                En nuestro local principal podrás ver el futuro de la industria chilena en acción, de la mano de los mejores expertos,verás los avances que desarrollamos a lo largo de Chil para pronto expandirnos sin fronteras y darle lo mejor a este mundo
+              </p>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 contenedor__direccion_index--mapa">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12948.572554456141!2d-70.66317673240701!3d-33.44304511155508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a6fd47e465%3A0x5d0fa12b4d88ae82!2sPalacio%20de%20La%20Moneda!5e0!3m2!1ses!2scl!4v1713319428996!5m2!1ses!2scl"  max-width="800px" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-lg-6 col-md-12 col-sm-12 contenedor__direccion_index--mapa">
+              <iframe class="col-lg-6 col-md-6 col-sm-12 contenedor__direccion_index--mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12948.572554456141!2d-70.66317673240701!3d-33.44304511155508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a6fd47e465%3A0x5d0fa12b4d88ae82!2sPalacio%20de%20La%20Moneda!5e0!3m2!1ses!2scl!4v1713319428996!5m2!1ses!2scl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-              
+          <br>
         </article>
+        
     </main>
     <footer>
         <div class="contenedor__footer--left">
@@ -245,13 +269,13 @@
                 <li><a href="./Pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
-        <div class="contenedor__logos contenedor__footer--right">
+        <div class=" contenedor__logos contenedor__footer--right">
             <h3>Contacto</h3>
             <ul>
-                <li><a href=""><img src="./Media/facebook.png" alt="icono de la red social facebook">Facebook</a></li>
-                <li><a href=""><img src="./Media/instagram.png" alt="icono de la red social instagram">Instagram</a></li>
-                <li><a href=""><img src="./Media/whatsapp.png" alt="icono de la red social whatsapp">whatsapp</a></li>
-                <li><a href=""><img src="./Media/gmail.png" alt="icono de gmail">Correo</a></li>
+                <li><a href=""><img class="img_footer_icon" src="./Media/facebook.png" alt="icono de la red social facebook">Facebook</a></li>
+                <li><a href=""><img class="img_footer_icon" src="./Media/instagram.png" alt="icono de la red social instagram">Instagram</a></li>
+                <li><a href=""><img class="img_footer_icon" src="./Media/whatsapp.png" alt="icono de la red social whatsapp">whatsapp</a></li>
+                <li><a href=""><img class="img_footer_icon" src="./Media/gmail.png" alt="icono de gmail">Correo</a></li>
             </ul>
         </div>
         <h4 class="contenedor__footer--bottom">desarrollado por <a href="##">Victocode007</a></h4>

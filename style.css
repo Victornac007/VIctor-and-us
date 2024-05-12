@@ -25,34 +25,7 @@ header{
     height: 660px;
     width: 100%;
 }
-/* .contenedor__header--top{
-    width: 90%;
-    height: 90px;
-    background-color: rgb(4, 22, 39);
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-.contenedor__header--top--text{
-    padding-top: 1rem;
-}
-.contenedor__header--top--logos{
-    width: 35%;
-    height: 2rem;
-    margin-right: 2%; 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 1.5rem;
-}
-.contenedor__header--top--logos img , .contenedor__logos img{
-    max-width: 1.9rem;
-    box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.75);
-    border-radius: 10px;
-} */
+
 /* COMIENZO DEL NAV */
 .menu-var{
     background-color: white;
@@ -65,7 +38,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
 }
 .nav-logo{
     font-size: 1.5rem;
@@ -113,32 +86,76 @@ header{
     justify-content: center;
     align-items: flex-start;
     backdrop-filter: blur(3px);
-    background-color: #030101b8;
+    background-color: #030101c9;
+}
+.contenedor__cards_home h3{
+    text-align: start;
 }
 .contenedor__cards_home h1{
-    font-size: 3rem;
+    font-size: 4rem;
+}
+@media screen and (min-width: 1024px)  {
+    .contenedor__cards_home-text{
+        width: 60%;
+    }
 }
 /* FIN DEL HEADER */
 /* COMIENZO DEL MAIN INDEX */
-main{
-    background-color:rgba(225, 144, 46, 0);
-    backdrop-filter: blur(3px);
-
-}
 .home_sld{
     width: 100%;
 }
 /* COMIENZO DE ACORDERON DE INDEX */
+.contenedor__home__elegirnos h2{
+    font-weight: bold;
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+    background-color: #f3f4f554;
+}
 .contenedor__acordeon{
     max-width: 800px;
     margin: 5px auto;
 }
 .acordeon_item p{
-    background-color: #ffffffd9;
+    background-color: #ffffff8c;
     backdrop-filter: blur(4px);
     border-radius: 1.5rem;
     padding: 1rem;
     font-size: large;
+}
+.contenedor__acordeon__background__video{
+    width: 100%;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.video__background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+}
+.contenedor__acordeon__primer--item_background{
+    background-image: url(./Media/concepto_papa07.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contenedor__acordeon__segundo--item_background{
+    background-image: url(./Media/concepto_papa08.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contenedor__acordeon__tercer--item_background{
+    background-image: url(./Media/banco-itau-01.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .contenedor__acordeon__quinto--item_background{
     background-image: url(./Media/cencosud-02.jpeg);
@@ -158,35 +175,123 @@ main{
     font-weight: 500;
     font-size: large;
 }
-
+/*  FIN DE ACORDEON */
 /* COMIENZO DE SECCION COTIZAR Y FORMULARIO */
+.container__cotizar{
+    background-color: rgb(255, 136, 0);
+}
 .contenedor__cotizar__texto{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: white;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
 }
-.contenedor__cotizar__texto div{
-    display: flex;
-    flex-direction: row;
+
+.contenedor__formulario_index{
+    color: #333;
+    border-radius: 2rem;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+    background: #d0d6ee;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    border-radius: 40px;
 }
-.img__cotizar{
-    max-width:50px;
-    margin-bottom: 15px;
+.imput_form{
+    box-shadow: #cff0ff 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+}
+.imput_form:focus{
+    outline: none;
+    border-inline: 2px solid #12B1D1;
+    border-radius: 2rem;
+    transition: 0.3s ease-in-out;
+}
+.boton_form{
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(249, 141, 0) 0%, rgb(203, 138, 108) 100%);
+    color: white;
+    border-radius: 2rem;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+    transition: all 0.3s ease-in-out;
+}
+.boton_form:hover{
+    background-color: #191fd67b;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+    background: linear-gradient(45deg, rgb(58, 64, 177) 0%, rgb(56, 209, 222) 100%);
+    transition: all 0.3s ease-in-out;
+
 }
 /* FIN DE  SECCION COTIZAR Y FORMULARIO */
 /* COMIENZO DE UBICACIÓN INDEX */
+.contenedor__ubicacion{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+@media screen and (min-width:992px) {
+    
+}
+.contenedor__video_ubicacion{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url(./Media/mapa_chile.png) no-repeat;
+    background-size: cover;
+}
 .contenedor__direccion_index--texto{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    margin: 0 auto;
+    background-color: rgba(3, 1, 1, 0.523);
+    backdrop-filter: blur(8px);
+    border-radius: 2rem;
+}
+.contenedor__direccion_index--texto p{
+    font-size: 1.5rem;
+    color: white;
 }
 .contenedor__direccion_index--mapa{
-    margin: 0 auto;
+    width:  420px;
+    height: 400px;
+    margin: 1rem auto 1rem auto;
+    border-radius: 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+
+}
+.contenedor__direccion_index--mapa:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+@media screen and (max-width:480px){
+    .contenedor__direccion_index--mapa{
+        width: 335px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:380px){
+    .contenedor__direccion_index--mapa{
+        width: 280px;
+    }
 }
 /* FIN DE UBICACION INDEX */
 /* COMIENZO DEL FOOTER */
@@ -202,6 +307,9 @@ footer{
     flex-wrap: wrap;
     
 }
+footer li a img{
+    width: 40px;
+}
 footer h4{
     width: 100%;
     font-size: 1.3rem;
@@ -212,17 +320,22 @@ footer h4{
     background-color: rgba(1, 0, 0, 0.143);
     padding: 1rem;
 }
-footer h4 a{
-    color: #ffffff;
-}
 .contenedor__footer--left , .contenedor__footer--right{
     width: 40%;
-    height: 300px;
+    max-width: 250px;
+    height: 310px;
     padding: 0.5rem;
     margin: 2rem;
     border-radius: 2rem;
     background: rgba(250, 250, 250, 0.196);
     backdrop-filter: blur(8px);
+    text-align: start;
+}
+@media screen and (max-width: 670px){
+    .contenedor__footer--left , .contenedor__footer--right{
+        width: 80%;
+        height: auto;
+    }
 }
 .contenedor__footer--left ul li{
     margin: 0px 5px 10px 15px;
@@ -233,5 +346,5 @@ footer h4 a{
     font-size: 1.2rem;
 }
 .contenedor__footer--right ul img{
-    margin: 1rem 1rem;
+    margin: 0.7rem 1rem;
 }
