@@ -40,6 +40,7 @@ p{
     background-size: cover;
     content: hidden;
 }
+/* FIN DEL HEADER */
 /* COMIENZO DEL NAV */
 .menu-var{
     background-color: white;
@@ -116,6 +117,8 @@ p{
 }
 /* FIN DEL HEADER */
 /* COMIENZO DEL MAIN INDEX */
+/* CARRUSEL DEL INDEX */
+
 .container__home__presentacion{
     max-width: 1270px;
 }
@@ -130,7 +133,7 @@ p{
     font-weight: bold;
 
 }
-
+/* FIN DE CARRUSEL INDEX */
 /* COMIENZO DE ACORDERON DE INDEX */
 .contenedor__home__elegirnos{
     font-weight: bold;
@@ -272,10 +275,6 @@ p{
     position: relative;
     
 }
-
-@media screen and (min-width:992px) {
-    
-}
 .contenedor__video_ubicacion{
     position: absolute;
     right: 0;
@@ -328,6 +327,7 @@ p{
     }
 }
 /* FIN DE UBICACION INDEX */
+/* FIN DEL MAIN INDEX */
 /* COMIENZO DEL FOOTER */
 footer{
     background-image: url(./Media/concepto_papa11.png);
@@ -382,3 +382,226 @@ footer h4{
 .contenedor__footer--right ul img{
     margin: 0.7rem 1rem;
 }
+/* FIN DEL FOOTER */
+/* COMIENZO NOSOTROS / MAIN */
+/* COMIENZO QUIENES SOMOS */
+.contenedor__nosotros{
+    position: relative;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.2fr 0.6fr 2fr 0.6fr 2fr 0.6fr 0.2fr; 
+    grid-template-rows: 0.1fr 0.5fr 1.2fr  0.1fr 0.1fr; 
+    gap: 30px 30px; 
+    grid-template-areas: 
+      ". . . . . . ."
+      ". . content_nosotros__center content_nosotros__center content_nosotros__center . ."
+      ". content_nosotros__left content_nosotros__left . content_nosotros__right content_nosotros__right ."
+      ". content_nosotros__left content_nosotros__left . content_nosotros__right content_nosotros__right ."
+      ". . . . . . ."; 
+  }
+  .content_nosotros__center { grid-area: content_nosotros__center; }
+  .content_nosotros__left { grid-area: content_nosotros__left; }
+  .content_nosotros__right { grid-area: content_nosotros__right; }
+.contenedor__nosotros div{
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(3px);
+    background-color: #ffffff58;
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+}
+.contenedor__nosotros div p{
+    text-align: justify;
+}
+.content_nosotros__center{
+    font-size: 1.2rem;
+    fon-w
+}
+.contenedor__nosotros div img{
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    border-radius: 1rem;
+}
+.video__background__nosotros{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+}
+.contenedor__texto_nosotros{
+    padding: 1rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(3px);
+    background-color: #493cd298;
+    color: white;
+    font-weight: bold;
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    font-size: 2rem;
+}
+@media screen and (max-width:990px) {
+    .contenedor__nosotros p{
+        font-size: 1rem;
+    }
+    .contenedor__nosotros{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        ". content_nosotros__center content_nosotros__center ."
+        "content_nosotros__left content_nosotros__left content_nosotros__right content_nosotros__right""
+        "content_nosotros__left content_nosotros__left content_nosotros__right content_nosotros__right""; 
+    }
+    .content_nosotros__left { grid-area: content_nosotros__left; }
+    .content_nosotros__right { grid-area: content_nosotros__right; }
+    .content_nosotros__center { grid-area: content_nosotros__center; }
+}
+@media screen and (max-width:770px){
+    .contenedor__nosotros{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 20px 20px; 
+        grid-template-areas: 
+        ". content_nosotros__center content_nosotros__center ."
+        "content_nosotros__left content_nosotros__left content_nosotros__right content_nosotros__right"
+        "content_nosotros__left content_nosotros__left content_nosotros__right content_nosotros__right"
+        ". . . ."; 
+    }
+    .content_nosotros__left { grid-area: content_nosotros__left; }
+    .content_nosotros__center { grid-area: content_nosotros__center; }
+    .content_nosotros__right { grid-area: content_nosotros__right; }
+    .contenedor__nosotros div img{
+        max-width: 250px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .contenedor__nosotros{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns:  0.2fr 1fr 0.2fr; 
+        grid-template-rows: 0.3fr 0.5fr 1fr 1fr 0.3fr; 
+        gap: 20px 20px; 
+        grid-template-areas: 
+        " . . ."
+        " . content_nosotros__center . "
+        " . content_nosotros__left . "
+        " . content_nosotros__right . "
+        " . . ."; 
+    }
+.content_nosotros__center { grid-area: content_nosotros__center; }
+.content_nosotros__right { grid-area: content_nosotros__right; }
+.content_nosotros__left { grid-area: content_nosotros__left; }
+}
+@media screen and (max-width:450px){
+    .contenedor__nosotros{
+        grid-template-columns: 0.2fr 2fr 0.2fr; 
+        grid-template-rows: 0.2fr 0.6fr 1.5fr 1.5fr 0.2fr; 
+        gap: 30px 30px; 
+        grid-template-areas: 
+        ". . ."
+        ". content_nosotros__center ."
+        ". content_nosotros__left ."
+        ". content_nosotros__right ."
+        ". . ."; 
+    }
+    .content_nosotros__center { grid-area: content_nosotros__center; }
+    .content_nosotros__left { grid-area: content_nosotros__left; }
+    .content_nosotros__right { grid-area: content_nosotros__right; }
+    .contenedor__nosotros div p{
+        font-size: 1rem;
+    }
+}
+/* FIN QUIENES SOMOS */
+/* COMIENZO DE SUCURSALES */
+.contenedor__sucursales{
+    background-image: url(./Media/background__chile_mapa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    justify-items: center;
+    
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.2fr 1.5fr 1.5fr 1.4fr 0.2fr; 
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 1.8fr 0.2fr; 
+    gap: 0px 20px; 
+    grid-template-areas: 
+    ". . . . ."
+    ". . h2 . ."
+    ". . . . ."
+    ". contenedor__sucursales-left contenedor__sucursales-center contenedor__sucursales-right ."
+    ". . . . ."; 
+}
+.contenedor__sucursales h2{grid-area: h2;}
+.contenedor__sucursales-left { grid-area: contenedor__sucursales-left; }
+.contenedor__sucursales-center { grid-area: contenedor__sucursales-center; }
+.contenedor__sucursales-right { grid-area: contenedor__sucursales-right; }
+
+.contenedor__sucursales h2{
+    font-size: 2.2rem;
+    background-color: rgba(0, 0, 0, 0.108);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(4px);
+}
+.contenedor__sucursales div{
+    padding: 0.7rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.108);
+
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+}
+.contenedor__sucursales div img{
+    max-width: 300px;
+    border-radius: 2rem;
+}
+.contenedor__sucursales div img:hover{
+    transform: scale(1.14);
+    transition: all 0.3s ;
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+}
+.contenedor__sucursales-center img{
+    max-height: 350px;
+}
+@media screen and (max-width:900px) {
+    .contenedor__sucursales{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 0.2fr 1.6fr 1.4fr 1.4fr 0.2fr; 
+        grid-template-rows: 0.2fr 0.2fr 1.2fr 1.2fr 1.2fr 0.2fr; 
+        gap: 20px 20px; 
+        grid-template-areas: 
+          ". . . . ."
+          ". . h2 . ."
+          ". contenedor__sucursales-left contenedor__sucursales-left contenedor__sucursales-left ."
+          ". contenedor__sucursales-center contenedor__sucursales-center contenedor__sucursales-center ."
+          ". contenedor__sucursales-right contenedor__sucursales-right contenedor__sucursales-right ."
+          ". . . . ."; 
+      }
+    .h2 { grid-area: h2; }
+    .contenedor__sucursales-left { grid-area: contenedor__sucursales-left; }
+    .contenedor__sucursales-center { grid-area: contenedor__sucursales-center; }
+    .contenedor__sucursales-right { grid-area: contenedor__sucursales-right; }
+    .contenedor__sucursales-center img{
+        max-height: 400px;
+    }
+}
+/* FIN DE SUCURSALES */
+/* FIN DE NOSOTROS / MAIN  */
