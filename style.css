@@ -22,7 +22,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 860px;
+    height: 900px;
     width: 100%;
     position: relative;
 }
@@ -120,7 +120,8 @@ p{
 /* CARRUSEL DEL INDEX */
 
 .container__home__presentacion{
-    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
 }
 .home__presentacion_texto{
     backdrop-filter: blur(6px);
@@ -385,9 +386,13 @@ footer h4{
 /* FIN DEL FOOTER */
 /* COMIENZO NOSOTROS / MAIN */
 /* COMIENZO QUIENES SOMOS */
+.contenedor_main__nosotros{
+    background-color: rgb(255, 136, 0);
+}
 .contenedor__nosotros{
     position: relative;
     display: grid; 
+    justify-items: center;
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
     grid-template-columns: 0.2fr 0.6fr 2fr 0.6fr 2fr 0.6fr 0.2fr; 
@@ -416,7 +421,6 @@ footer h4{
 }
 .content_nosotros__center{
     font-size: 1.2rem;
-    fon-w
 }
 .contenedor__nosotros div img{
     display: block;
@@ -434,13 +438,14 @@ footer h4{
     height: auto;
     z-index: -1;
     background-size: cover;
+    background-position: center;
 }
 .contenedor__texto_nosotros{
     padding: 1rem;
     border-radius: 2rem;
     backdrop-filter: blur(3px);
-    background-color: #493cd298;
-    color: white;
+    background-color: white;
+    color: #0e1283;
     font-weight: bold;
     box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
     font-size: 2rem;
@@ -455,7 +460,7 @@ footer h4{
         grid-auto-rows: 1fr; 
         grid-template-columns: 1fr 1fr 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 0px; 
+        gap: 30px 30px; 
         grid-template-areas: 
         ". content_nosotros__center content_nosotros__center ."
         "content_nosotros__left content_nosotros__left content_nosotros__right content_nosotros__right""
@@ -471,7 +476,7 @@ footer h4{
         grid-auto-columns: 1fr; 
         grid-auto-rows: 1fr; 
         grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-rows: 0.5fr 0.8fr 0.8fr; 
         gap: 20px 20px; 
         grid-template-areas: 
         ". content_nosotros__center content_nosotros__center ."
@@ -483,51 +488,95 @@ footer h4{
     .content_nosotros__center { grid-area: content_nosotros__center; }
     .content_nosotros__right { grid-area: content_nosotros__right; }
     .contenedor__nosotros div img{
-        max-width: 250px;
+        max-width: 290px;
+        border-radius: 2rem;
     }
+    .contenedor__nosotros div{
+        width: 300px;
+        padding: 0.2rem;
+    }
+    .contenedor__nosotros div p{
+        font-size: 0.7rem;
+        text-align: center;
+    } 
 }
 @media screen and (max-width: 700px) {
     .contenedor__nosotros{
         display: grid; 
         grid-auto-columns: 1fr; 
         grid-auto-rows: 1fr; 
-        grid-template-columns:  0.2fr 1fr 0.2fr; 
-        grid-template-rows: 0.3fr 0.5fr 1fr 1fr 0.3fr; 
+        grid-template-columns: 0.8fr 0.7fr 0.7fr 0.6fr; 
+        grid-template-rows: 0.2fr 0.4fr 1fr 0.2fr; 
+        gap: 30px 0px; 
+        grid-template-areas: 
+            ". . . ."
+            ". content_nosotros__center content_nosotros__center ."
+            "content_nosotros__left content_nosotros__left content_nosotros__right content_nosotros__right"
+            ". . . ."; 
+        }
+        .content_nosotros__left { grid-area: content_nosotros__left; }
+        .content_nosotros__right { grid-area: content_nosotros__right; }
+        .content_nosotros__center { grid-area: content_nosotros__center; }
+
+    .contenedor__nosotros div{
+        padding: 0.3rem;
+        border-radius: 2rem;
+        backdrop-filter: blur(10px);
+        width: 280px;
+        max-width:  300px;
+        background-color: rgb(238, 238, 242);
+        box-shadow: 10px 10px 23px 0px rgba(3, 3, 4, 0.961);
+    }
+    .contenedor__nosotros div p{
+        font-size: 0.8rem;
+        text-align: center;
+    } 
+    .contenedor__nosotros div img{
+        width: 200px;
+    }
+
+}
+@media screen and (max-width:550px) {
+    .contenedor__nosotros div{
+        width: 250px
+    }
+}
+@media screen and (max-width:490px){
+    .contenedor__nosotros{
+        display: grid; 
+        justify-items: center;
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1.6fr; 
+        grid-template-rows: 0.2fr 0.3fr 0.3fr 0.3fr; 
         gap: 20px 20px; 
         grid-template-areas: 
-        " . . ."
-        " . content_nosotros__center . "
-        " . content_nosotros__left . "
-        " . content_nosotros__right . "
-        " . . ."; 
+          "."
+          "content_nosotros__center"
+          "content_nosotros__left"
+          "content_nosotros__right"; 
+      }
+      .content_nosotros__center { grid-area: content_nosotros__center; }
+      .content_nosotros__right { grid-area: content_nosotros__right; }
+      .content_nosotros__left { grid-area: content_nosotros__left; }
+
+    .contenedor__nosotros div{
+        max-width: 250px;
+        min-width: 220px;
+        border-radius: 1rem;
+
     }
-.content_nosotros__center { grid-area: content_nosotros__center; }
-.content_nosotros__right { grid-area: content_nosotros__right; }
-.content_nosotros__left { grid-area: content_nosotros__left; }
-}
-@media screen and (max-width:450px){
-    .contenedor__nosotros{
-        grid-template-columns: 0.2fr 2fr 0.2fr; 
-        grid-template-rows: 0.2fr 0.6fr 1.5fr 1.5fr 0.2fr; 
-        gap: 30px 30px; 
-        grid-template-areas: 
-        ". . ."
-        ". content_nosotros__center ."
-        ". content_nosotros__left ."
-        ". content_nosotros__right ."
-        ". . ."; 
-    }
-    .content_nosotros__center { grid-area: content_nosotros__center; }
-    .content_nosotros__left { grid-area: content_nosotros__left; }
-    .content_nosotros__right { grid-area: content_nosotros__right; }
     .contenedor__nosotros div p{
-        font-size: 1rem;
+        font-size: 0.7rem;
+    }
+    .contenedor__nosotros div img{
+        width: 210px;
     }
 }
 /* FIN QUIENES SOMOS */
 /* COMIENZO DE SUCURSALES */
 .contenedor__sucursales{
-    background-image: url(./Media/background__chile_mapa.png);
+    background-image: url(./Media/chile_bosque_horizontal.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -554,10 +603,10 @@ footer h4{
 
 .contenedor__sucursales h2{
     font-size: 2.2rem;
-    background-color: rgba(0, 0, 0, 0.108);
+    background-color: rgba(0, 0, 0, 0.209);
     padding: 0.5rem;
     border-radius: 2rem;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
 }
 .contenedor__sucursales div{
     padding: 0.7rem;
@@ -578,30 +627,45 @@ footer h4{
 }
 .contenedor__sucursales-center img{
     max-height: 350px;
+    margin: 0 auto;
 }
 @media screen and (max-width:900px) {
+ 
     .contenedor__sucursales{
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-auto-rows: 1fr; 
-        grid-template-columns: 0.2fr 1.6fr 1.4fr 1.4fr 0.2fr; 
-        grid-template-rows: 0.2fr 0.2fr 1.2fr 1.2fr 1.2fr 0.2fr; 
-        gap: 20px 20px; 
-        grid-template-areas: 
-          ". . . . ."
-          ". . h2 . ."
-          ". contenedor__sucursales-left contenedor__sucursales-left contenedor__sucursales-left ."
-          ". contenedor__sucursales-center contenedor__sucursales-center contenedor__sucursales-center ."
-          ". contenedor__sucursales-right contenedor__sucursales-right contenedor__sucursales-right ."
-          ". . . . ."; 
-      }
-    .h2 { grid-area: h2; }
-    .contenedor__sucursales-left { grid-area: contenedor__sucursales-left; }
-    .contenedor__sucursales-center { grid-area: contenedor__sucursales-center; }
-    .contenedor__sucursales-right { grid-area: contenedor__sucursales-right; }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor__sucursales-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor__sucursales-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .contenedor__sucursales-center img{
-        max-height: 400px;
+        max-height: 350px;
     }
 }
+@media screen and (max-width:770px){
+    .contenedor__sucursales{
+        background-image: url(./Media/chile_bosque_vertical.png);
+    }
+}
+@media screen and (max-width:550px){
+    .contenedor__sucursales div p{
+        font-size: 0.7rem;
+    }
+
+}
+@media screen and (max-width:450px){
+
+}
+
 /* FIN DE SUCURSALES */
 /* FIN DE NOSOTROS / MAIN  */
