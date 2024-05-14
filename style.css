@@ -663,9 +663,196 @@ footer h4{
     }
 
 }
-@media screen and (max-width:450px){
+/* FIN DE SUCURSALES */
+/* FIN DE NOSOTROS / MAIN  */
+/* COMIENZO DE SERVICIOS /MAIN */
+/* COMIENZO SERVICIOS PRINCIPALES */
+.contenedor__servicios-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(25, 40, 199, 0.597) 100%);
+}
+
+/* FIN SERVICIOS PRINCIPALES */
+
+/* FIN DE SERVICIOS /MAIN */
+/* TARJETAS DE SERVICIOS */
+.card-container {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.card-container::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+}
+.card .img-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    content-visibility: hideen;
+    justify-content: center;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    transition: scale 0.6s, rotate 0.6s, filter 1s;
+}
+.card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    color: #090505;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.card .content .heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+.card:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card:hover .img-content {
+    scale: 2.5;
+    rotate: 30deg;
+    filter: blur(7px);
+}
+.card:hover .img-content svg {
+    fill: transparent;
+}
+.card03 .content {
+    color:white;
+}
+@media screen and (min-width:350px){
+    .card-container{
+        width: 300px;
+    }
+}
+@media screen and (min-width:650px){
+    .card-container{
+        width: 250px;
+    }
+    .contenedor__servicios-principal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2rem;
+    }
 
 }
 
-/* FIN DE SUCURSALES */
-/* FIN DE NOSOTROS / MAIN  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COMIENZO card_servicios_topS SERVICIOS */
+.card_servicios_top::before {
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    top: 20%;
+  }
+  
+  .card_servicios_top::before,
+  .card_servicios_top::after {
+    content: "";
+    background-color: #7090fa4b;
+    position: absolute;
+    filter: blur(10px);
+  }
+  
+  .card_servicios_tops {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .card_servicios_tops .red,
+  .card_servicios_tops .blue,
+  .card_servicios_tops .green {
+    width: 200px;
+    height: 180px;
+    font-family: "CustomFont", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    backdrop-filter: blur(30px);
+    background-color: rgba(65, 65, 65, 0.11);
+    border: 1px solid rgba(144, 161, 255, 0.171);
+  }
+  .red{
+    width: fit-content;
+    background-image: url(./Media/concepto_papa09.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .card_servicios_tops .card_servicios_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .card_servicios_tops .card_servicios_top p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .card_servicios_tops .card_servicios_top p.second-text {
+    font-size: 0.7em;
+  }
+  
+  .card_servicios_tops .card_servicios_top:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .card_servicios_tops:hover > .card_servicios_top:not(:hover) {
+    filter: blur(5px);
+    transform: scale(0.9, 0.9);
+  }
+  /* FIN TARJETAS UI */
