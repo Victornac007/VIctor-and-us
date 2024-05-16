@@ -965,30 +965,21 @@ body{
         justify-content: space-evenly;
     }
 }
+/* FIN DE SERVICIOS */
+/* COMIENZO CLIENTES */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contenedor__clientes_imgs h2{
+    color: #f89b29;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.contenedor__clientes_imgs p {
+    color: white;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
   
-/* COMIENZO card_servicios_topS SERVICIOS */
+/* COMIENZO contenedor__clientes_imgs*/
 .card_servicios_top::before {
     border-radius: 50%;
     width: 7rem;
@@ -1005,24 +996,35 @@ body{
   .card_servicios_tops {
     display: flex;
     gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
   }
   .card_servicios_tops .red,
   .card_servicios_tops .blue,
   .card_servicios_tops .green {
-    width: 200px;
-    height: 180px;
+    width: 120px;
+    height: 100px;
     font-family: "CustomFont", Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 600;
     backdrop-filter: blur(30px);
     background-color: rgba(65, 65, 65, 0.11);
     border: 1px solid rgba(144, 161, 255, 0.171);
-  }
-  .red{
-    width: fit-content;
-    background-image: url(./Media/concepto_papa09.png);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .red{
+    background-image: url(./Media/concepto_papa09.png);
+  }
+  .blue{
+    background-image: url(./Media/cencosud-02.jpeg);
+  }
+  .green{
+    background-image: url(./Media/banco-itau-01.jpeg);
   }
   .card_servicios_tops .card_servicios_top {
     display: flex;
