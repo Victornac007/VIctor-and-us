@@ -1,0 +1,333 @@
+@import "variables";
+body{
+    background: linear-gradient(90deg, rgb(166, 165, 229) 10%, #0e1283 100%);
+    ul{
+        list-style: none;
+        list-style-type: none;
+    }
+    h2 , h3 , h4 , h6 , p{
+        text-align: center;
+    }
+    p{
+        max-width: 500px;
+        margin: auto;
+        line-height: 1.7;
+    }
+    .contenedor__header{
+        background-image: url(./Media/concepto_papa08.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 900px;
+        width: 100%;
+        position: relative;
+        .header__index-video-background{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            background: url(../Media/concepto_papa08.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+            content: hidden;
+        }
+        .menu-var{
+            background-color: white;
+            height: 80px;
+            margin: 30px;
+            border-radius: 16px;
+            box-shadow: 0 0 6px 3px rgba(16, 14, 1, 0.682);
+            padding: .5rem;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 2;
+            .nav-logo{
+                font-size: 1.5rem;
+                font-weight: 900;
+                color: #0e1283;
+                transition: 0.6s color;
+            }
+            .nav-bar-menu{
+                &:focus{
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+            .offcanvas-header{
+                .btn-cerrar{
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+            .offcanvas-body{
+                .navbar-nav{
+                    .nav-item{
+                        .link-nav{
+                            color: #666777;
+                            font-weight: 500;
+                            font-size: 1.2rem;
+                            position: relative;
+                            &:hover{
+                                color: #000;
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: 0;
+                                height: 2px;
+                                background-color:c;
+                                visibility: hidden;
+                                transition: 0.3s ease-in-out;
+                            }
+                            &:hover::before{
+                                width: 100%;
+                                visibility: visible;
+                            }
+                        }
+                        .active{
+                            color: #000;
+                            &::before{
+                                width: 100%;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+        .contenedor__cards_home{
+            width: 100%;
+            height: 100%;
+            padding: 5rem 1.5rem 5rem 1.5rem;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            font-weight: bold;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.567);
+            h3{
+                text-align: start;
+            }
+            h1{
+                font-size: 4rem;
+            }
+            .contenedor__cards_home-text{
+                width: 60%;
+            }
+        }
+    }
+    .container__home__presentacion{
+        width: 100%;
+        margin: 0 auto;
+        .carousel-item{
+            .home__presentacion_texto{
+                backdrop-filter: blur(6px);
+                padding: 1rem;
+                background-color: #e7e7e79b;
+                border-radius: 2rem;
+                font-size: 1rem;
+                h2{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .contenedor__acordeon__background__video{
+        width: 100%;
+        padding-top: 4rem;
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+        .contenedor__home__elegirnos{
+            font-weight: bold;
+            backdrop-filter: blur(6px);
+            padding: 1rem;
+            background-color: #f3f4f554;
+        }
+        .video__background{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            background-size: cover;
+        }
+        .contenedor__acordeon{
+            max-width: 800px;
+            margin: 5px 1rem;
+            box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -15px;
+            border-radius: 2rem;
+        }
+        .accordion{
+            .accordion-item{
+                .accordion-collapse{
+                    .acordeon_item{
+                        p{
+                            background-color: #ffffff8c;
+                            backdrop-filter: blur(4px);
+                            border-radius: 1.5rem;
+                            padding: 1rem;
+                            font-size: large;
+                        }
+                    }
+                    .contenedor__acordeon__primer--item_background{
+                        background-image: url(./Media/concepto_papa07.png);
+                        background-repeat:no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    .contenedor__acordeon__segundo--item_background{
+                        background-image: url(./Media/concepto_papa08.png);
+                        background-repeat:no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    .contenedor__acordeon__tercer--item_background{
+                        background-image: url(./Media/banco-itau-01.jpeg);
+                        background-repeat:no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    .contenedor__acordeon__cuarto--item_background{
+                        background-image: url(./Media/Banco-itau-02.jpeg);
+                        background-size: cover;
+                        background-position: center;
+                        p{
+                            text-align: left;
+                            margin-left: 3rem;
+                            background-color: #ffffff3d;
+                            font-weight: 500;
+                            font-size: large;
+                        }
+                    }
+                    .contenedor__acordeon__quinto--item_background{
+                        background-image: url(./Media/cencosud-02.jpeg);
+                        background-repeat:no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+            }
+        }
+    }
+    .container__cotizar{
+        background-color: $color-secondary;
+        box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+        .row{
+            .contenedor__cotizar__texto{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                color: white;
+                font-weight: bold;
+                font-size: 1.8rem;
+            }
+        }
+        .contenedor__cotizar__form{
+            .contenedor__formulario_index{
+                color: #333;
+                border-radius: 2rem;
+                box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+                background: #d0d6ee;
+                background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+                border-radius: 40px;
+            }
+            .imput_form{
+                box-shadow: #cff0ff 0px 10px 10px -5px;
+                border-inline: 2px solid transparent;
+                &:focus{
+                    outline: none;
+                    border-inline: 2px solid #12B1D1;
+                    border-radius: 2rem;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+            .boton_form{
+                width: 100%;
+                font-weight: bold;
+                background: linear-gradient(45deg, $color-secondary 0%, rgb(203, 138, 108) 100%);
+                color: white;
+                border-radius: 2rem;
+                box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: #0e1283;
+                    color: white;
+                    transform: scale(1.03);
+                    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+                    background: linear-gradient(45deg, rgb(58, 64, 177) 0%, rgb(56, 209, 222) 100%);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+    .contenedor__ubicacion{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        padding: 1rem;
+        border-radius: 2rem;
+        position: relative;
+        .contenedor__video_ubicacion{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            background: url(./Media/mapa_chile.png) no-repeat;
+            background-size: cover;
+        }
+        .contenedor__ubicacion__backdrop{
+            .contenedor__direccion_index--texto{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                margin: 0 auto;
+                background-color: rgba(3, 1, 1, 0.523);
+                backdrop-filter: blur(8px);
+                border-radius: 2rem;
+                p{
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+            .contenedor__direccion_index--mapa{
+                width:  420px;
+                height: 400px;
+                margin: 1rem auto 1rem auto;
+                border-radius: 2rem;
+                border-radius: 2rem;
+                box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+                &:hover{
+                    transform: scale(1.03);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    
+}

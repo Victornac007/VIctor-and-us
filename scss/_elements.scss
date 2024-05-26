@@ -1,0 +1,162 @@
+
+header{
+    .menu-var{
+        background-color: white;
+        height: 80px;
+        margin: 30px;
+        border-radius: 16px;
+        box-shadow: 0 0 6px 3px rgba(16, 14, 1, 0.682);
+        padding: .5rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        .nav-logo{
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #0e1283;
+            padding: 0.2rem;
+            border-radius: 1rem;
+            animation: flotar 3s ease-in-out infinite;
+            animation: color 5s ease-in-out infinite;
+
+        }
+        .nav-bar-menu{
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        .offcanvas-header{
+            .btn-cerrar{
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        .offcanvas-body{
+            .navbar-nav{
+                .nav-item{
+                    .link-nav{
+                        color: #666777;
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                        position: relative;
+                        &:hover{
+                            color: #000;
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 0;
+                            height: 2px;
+                            background-color:$color-primary;
+                            visibility: hidden;
+                            transition: 0.3s ease-in-out;
+                        }
+                        &:hover::before{
+                            width: 100%;
+                            visibility: visible;
+                        }
+                    }
+                    .active{
+                        color: #000;
+                        &::before{
+                            width: 100%;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}
+footer{
+    background-image: url(../Media/concepto_papa11.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h4{
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+        text-transform: capitalize;
+        backdrop-filter: blur(15px);
+        color: #ffffff;
+        background-color: rgba(1, 0, 0, 0.143);
+    }
+    .contenedor__footer--right{
+        width: 40%;
+        max-width: 250px;
+        min-width: 250px;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        background: rgba(250, 250, 250, 0.196);
+        backdrop-filter: blur(8px);
+        text-align: start;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items:flex-start;
+            li{
+                flex-wrap: nowrap;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.2rem;
+                }
+                img{
+                    width: 40px;
+                }
+            }
+            img{
+                margin: 0.7rem 1rem 0.7rem 0rem;
+            }
+        }
+    }
+    .contenedor__footer--left{
+        width: 40%;
+        min-width: 250px;
+        max-width: 350px;
+        height: 310px;
+        padding: 0.5rem;
+        margin: 2rem;
+        border-radius: 2rem;
+        background: rgba(250, 250, 250, 0.196);
+        backdrop-filter: blur(8px);
+        text-align: start;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.3rem;
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+
+        }
+    }
+}

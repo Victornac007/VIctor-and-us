@@ -1,0 +1,91 @@
+
+.contenedor__clientes_imgs{
+    padding-top: 10rem;
+    h2{
+        color: $color-secondary;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    p {
+        color: white;
+        backdrop-filter: blur(10px);
+        text-align: center;
+        padding: 0.2rem 0.5rem 1rem 0.5rem;
+    }
+    .card_servicios_tops{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0 auto;
+        max-width: 1000px;
+        &:hover {
+            > .card_servicios_top{
+                &:not(:hover) {
+                    filter: blur(5px);
+                    transform: scale(0.9, 0.9);
+                  }
+            }
+        }
+        .green , .blue , .red{
+            width: 120px;
+            height: 100px;
+            font-family: "CustomFont", Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            backdrop-filter: blur(50px);
+            background-color: rgba(65, 65, 65, 0.11);
+            border: 1px solid rgba(144, 161, 255, 0.171);
+            background-size: cover;
+            background-repeat: no-repeat;
+        } 
+        .red{
+            background-image: url(../Media/concepto_papa09.png);
+        }
+        .blue{
+            background-image: url(../Media/cencosud-02.jpeg);
+        }
+        .green{
+            background-image: url(../Media/banco-itau-01.jpeg);
+        }
+        .card_servicios_top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            transition: 400ms;
+            &::before{
+                border-radius: 50%;
+                width: 7rem;
+                height: 7rem;
+                top: 20%;
+                content: "";
+                background-color: #7090fa4b;
+                position: absolute;
+                filter: blur(10px);
+            }
+            &::after{
+                content: "";
+                background-color: #7090fa4b;
+                position: absolute;
+                filter: blur(10px);
+            }
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+            .tip{
+                color: white;
+                backdrop-filter: blur(30px);
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
