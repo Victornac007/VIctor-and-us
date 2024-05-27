@@ -671,7 +671,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   max-width: 1000px;
 }
 .contenedor__clientes_imgs .card_servicios_tops:hover > .card_servicios_top:not(:hover) {
-  filter: blur(5px);
+  filter: blur(1px);
   transform: scale(0.9, 0.9);
 }
 .contenedor__clientes_imgs .card_servicios_tops .green, .contenedor__clientes_imgs .card_servicios_tops .blue, .contenedor__clientes_imgs .card_servicios_tops .red {
@@ -726,10 +726,12 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 }
 .contenedor__clientes_imgs .card_servicios_tops .card_servicios_top .tip {
   color: white;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(50px);
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 
 .contendedor__contacto-up {
