@@ -26,3 +26,15 @@ $color-accent: #f39c12; // Amarillo
         color: $color-primary;
     }
 }
+@keyframes titilar{
+	0%{
+		opacity: 0;
+
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}

@@ -23,6 +23,17 @@
     color: navy;
   }
 }
+@keyframes titilar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   background: linear-gradient(90deg, rgb(166, 165, 229) 10%, #0e1283 100%);
 }
@@ -244,6 +255,9 @@ body .container__cotizar .row .contenedor__cotizar__texto {
   color: white;
   font-weight: bold;
   font-size: 1.8rem;
+}
+body .container__cotizar .row .contenedor__cotizar__texto strong {
+  animation: titilar 1.5s infinite ease-in-out;
 }
 body .container__cotizar .contenedor__cotizar__form .contenedor__formulario_index {
   color: #333;
@@ -581,6 +595,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
+  animation: flotar 3s infinite ease-in-out;
 }
 .contenedor__servicios-secundario .contenedor-card-mas_servicios .card:hover {
   transform: translateY(-10px);
@@ -1068,6 +1083,17 @@ footer .contenedor__footer--left ul li a img {
   }
   100% {
     color: navy;
+  }
+}
+@keyframes titilar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 * {
