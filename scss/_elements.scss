@@ -18,9 +18,7 @@ header{
             color: #0e1283;
             padding: 0.2rem;
             border-radius: 1rem;
-            animation: flotar 3s ease-in-out infinite;
             animation: color 5s ease-in-out infinite;
-
         }
         .nav-bar-menu{
             &:focus{
@@ -98,7 +96,12 @@ footer{
         text-transform: capitalize;
         backdrop-filter: blur(15px);
         color: #ffffff;
-        background-color: rgba(1, 0, 0, 0.143);
+        background-color: rgba(1, 0, 0, 0.539);
+        padding: 2rem;
+        a{
+            text-decoration: none;
+            animation: color 1s ease-in-out infinite;
+        }
     }
     .contenedor__footer--right{
         width: 40%;

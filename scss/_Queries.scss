@@ -60,16 +60,21 @@
         }
     }
     .contenedor_main__nosotros{
-        .contenedor__nosotros{
-            .div--nosotros{
-                max-width: 450px;
-                p{
-                    font-size: 1rem;
-                }
+        .contenedor__nosotros--up{
+            .video__background__nosotros{
+                top: 80;
             }
-            .content_nosotros-up--down{
-                em{
-                    display:block;
+            .contenedor__nosotros{
+                .div--nosotros{
+                    max-width: 450px;
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                .content_nosotros-up--down{
+                    em{
+                        display:block;
+                    }
                 }
             }
         }

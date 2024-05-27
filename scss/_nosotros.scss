@@ -1,23 +1,10 @@
 .contenedor_main__nosotros{
-    .contenedor__texto_nosotros{
-        padding: 1rem;
-        border-radius: 2rem;
-        backdrop-filter: blur(13px);
-        background-color: white;
-        color: $color-primary;
-        font-weight: bold;
-        box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
-        font-size: 1.3rem;
-        margin-top: 8rem;
-        animation: flotar 3s infinite ease-in-out;
-    }
-    .contenedor__nosotros{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
+    .contenedor__nosotros--up{
+        padding-top: 8rem;
+        padding-bottom: 1rem;
         .video__background__nosotros{
             position: absolute;
+            top:0;
             right: 0;
             bottom: 0;
             min-width: 100%;
@@ -25,47 +12,64 @@
             width: auto;
             height: auto;
             z-index: -1;
-            background-size: cover;
             background-position: center;
-            content: hidden;
+            background-size: cover;
         }
-        .content_nosotros__center {
-            width: 70%;
-        }
-        .content_nosotros__left {
-            width: 40%; 
-        }
-        .content_nosotros__right {
-            width: 40%; 
-
-        }
-        .div--nosotros{
-            min-width: 150px;
-            border-radius: 1rem;
-            backdrop-filter: blur(15px);
-            padding: 0.5rem;
-            background-color: #ffffffd0;
+        .contenedor__texto_nosotros{
+            padding: 1rem;
+            border-radius: 2rem;
+            backdrop-filter: blur(13px);
+            background-color: white;
+            color: $color-primary;
+            font-weight: bold;
             box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
-            p{
-                font-size: 12px;
-            }
-            img{
-                display: block;
-                margin-top: 15px;
-                width: 100%;
-                border-radius: 1rem;
-            }
+            font-size: 1.3rem;
+            animation: flotar 3s infinite ease-in-out;
         }
-        .content_nosotros-up--down{
+        .contenedor__nosotros{
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin: 1rem 0 2rem 0;
-            em{
-                display: none;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            .content_nosotros__center {
+                width: 70%;
+            }
+            .content_nosotros__left {
+                width: 40%; 
+            }
+            .content_nosotros__right {
+                width: 40%; 
+    
+            }
+            .div--nosotros{
+                min-width: 150px;
+                border-radius: 1rem;
+                backdrop-filter: blur(15px);
+                padding: 0.5rem;
+                background-color: #ffffffd0;
+                box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+                p{
+                    font-size: 12px;
+                }
+                img{
+                    display: block;
+                    margin-top: 15px;
+                    width: 100%;
+                    border-radius: 1rem;
+                }
+            }
+            .content_nosotros-up--down{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 1rem 0 0 0;
+                em{
+                    display: none;
+                }
             }
         }
     }
+   
     .contenedor__sucursales{
         background-image: url(../Media/chile_bosque_vertical.png);
         background-size: cover;
@@ -76,6 +80,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 2rem;
         h2{
             font-size: 1rem;
             background-color: rgba(0, 0, 0, 0.209);
