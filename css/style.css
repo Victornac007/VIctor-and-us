@@ -989,7 +989,7 @@ footer .contenedor__footer--left ul li a img {
     font-size: 12px;
   }
   .contenedor_main__nosotros .contenedor__nosotros--up .video__background__nosotros {
-    top: 80;
+    content: hidden;
   }
   .contenedor_main__nosotros .contenedor__nosotros--up .contenedor__nosotros .div--nosotros {
     max-width: 450px;
@@ -1007,6 +1007,7 @@ footer .contenedor__footer--left ul li a img {
     background-repeat: no-repeat;
     color: white;
     justify-items: center;
+    padding-bottom: 3rem;
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -1031,6 +1032,9 @@ footer .contenedor__footer--left ul li a img {
     box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
+  }
+  .contenedor_main__nosotros .contenedor__sucursales div p {
+    font-size: 1.3rem;
   }
   .contenedor_main__nosotros .contenedor__sucursales div img {
     max-width: 300px;
