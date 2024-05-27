@@ -183,7 +183,7 @@ body .contenedor__acordeon__background__video .video__background {
 }
 body .contenedor__acordeon__background__video .contenedor__acordeon {
   max-width: 800px;
-  margin: 5px 1rem;
+  margin: 5px auto;
   box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -15px;
   border-radius: 2rem;
 }
@@ -233,6 +233,7 @@ body .contenedor__acordeon__background__video .accordion .accordion-item .accord
 body .container__cotizar {
   background-color: orange;
   box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+  padding: 3rem;
 }
 body .container__cotizar .row .contenedor__cotizar__texto {
   display: flex;
@@ -255,6 +256,7 @@ body .container__cotizar .contenedor__cotizar__form .contenedor__formulario_inde
 body .container__cotizar .contenedor__cotizar__form .imput_form {
   box-shadow: #cff0ff 0px 10px 10px -5px;
   border-inline: 2px solid transparent;
+  margin: 10px 5px 10px 5px;
 }
 body .container__cotizar .contenedor__cotizar__form .imput_form:focus {
   outline: none;
@@ -316,7 +318,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   color: white;
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--mapa {
-  width: 420px;
+  width: 330px;
   height: 400px;
   margin: 1rem auto 1rem auto;
   border-radius: 2rem;
@@ -943,6 +945,9 @@ footer .contenedor__footer--left ul li a img {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+  }
+  .contenedor__ubicacion {
+    padding: 4rem;
   }
 }
 @media screen and (min-width: 650px) {
