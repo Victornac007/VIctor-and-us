@@ -24,8 +24,6 @@ body{
         position: relative;
         .header__index-video-background{
             @include background-video;
-            background: url(../Media/concepto_papa08.png) no-repeat;
-            content: hidden;
         }
         .menu-var{
             background-color: white;
