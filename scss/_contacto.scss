@@ -14,6 +14,7 @@
         padding: 0.4rem;
         border-radius: 1rem;
         font-size: 0.6rem;
+        @include box-shadow;
         h4{
             font-size: 0.8rem;
         }
@@ -36,16 +37,14 @@
         }
     }
     .contenedor_contacto__video{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         padding: 2rem;
         video{
             max-width: 800px;
             width: 80%;
             max-width: 800px;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            @include box-shadow;
         }
     }
 }

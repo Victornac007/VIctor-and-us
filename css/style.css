@@ -67,9 +67,9 @@ body .contenedor__header .header__index-video-background {
   width: auto;
   height: auto;
   z-index: -1;
-  background: url(../Media/concepto_papa08.png) no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: center;
+  background: url(../Media/concepto_papa08.png) no-repeat;
   content: hidden;
 }
 body .contenedor__header .menu-var {
@@ -88,7 +88,7 @@ body .contenedor__header .menu-var {
 body .contenedor__header .menu-var .nav-logo {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #0e1283;
+  color: navy;
   transition: 0.6s color;
 }
 body .contenedor__header .menu-var .nav-bar-menu:focus {
@@ -173,7 +173,7 @@ body .contenedor__acordeon__background__video {
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 body .contenedor__acordeon__background__video .contenedor__home__elegirnos {
   font-weight: bold;
@@ -191,11 +191,12 @@ body .contenedor__acordeon__background__video .video__background {
   height: auto;
   z-index: -1;
   background-size: cover;
+  background-position: center;
 }
 body .contenedor__acordeon__background__video .contenedor__acordeon {
   max-width: 800px;
   margin: 5px auto;
-  box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -15px;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
   border-radius: 2rem;
 }
 body .contenedor__acordeon__background__video .accordion .accordion-item .accordion-collapse .acordeon_item p {
@@ -313,8 +314,9 @@ body .contenedor__ubicacion .contenedor__video_ubicacion {
   width: auto;
   height: auto;
   z-index: -1;
-  background: url(./Media/mapa_chile.png) no-repeat;
   background-size: cover;
+  background-position: center;
+  background: url(./Media/mapa_chile.png) no-repeat;
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto {
   display: flex;
@@ -337,7 +339,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   margin: 1rem auto 1rem auto;
   border-radius: 2rem;
   border-radius: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--mapa:hover {
   transform: scale(1.03);
@@ -350,7 +352,6 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 }
 .contenedor_main__nosotros .contenedor__nosotros--up .video__background__nosotros {
   position: absolute;
-  top: 0;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -358,8 +359,9 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   width: auto;
   height: auto;
   z-index: -1;
-  background-position: center;
   background-size: cover;
+  background-position: center;
+  top: 0;
 }
 .contenedor_main__nosotros .contenedor__nosotros--up .contenedor__texto_nosotros {
   padding: 1rem;
@@ -427,7 +429,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 }
 .contenedor_main__nosotros .contenedor__sucursales h2 {
   font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0.209);
+  background-color: rgba(0, 0, 0, 0.241);
   padding: 0.5rem;
   border-radius: 2rem;
   backdrop-filter: blur(8px);
@@ -473,7 +475,6 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   flex-direction: column;
   align-items: center;
   margin-top: 10rem;
-  background: linear-gradient(90deg, rgb(166, 165, 229) 10%, #0e1283 100%);
 }
 .contenedor__servicios-principal .h2__servicios {
   width: 100%;
@@ -489,6 +490,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   position: relative;
   border-radius: 10px;
   margin-bottom: 2rem;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 .contenedor__servicios-principal .card-container::before {
   content: "";
@@ -751,6 +753,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   padding: 0.4rem;
   border-radius: 1rem;
   font-size: 0.6rem;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 .contendedor__contacto-up .contenedor__contacto-up--text h4 {
   font-size: 0.8rem;
@@ -783,7 +786,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   width: 80%;
   max-width: 800px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 
 header .menu-var {
@@ -791,7 +794,7 @@ header .menu-var {
   height: 80px;
   margin: 30px;
   border-radius: 16px;
-  box-shadow: 0 0 6px 3px rgba(16, 14, 1, 0.682);
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
   padding: 0.5rem;
   position: fixed;
   top: 0;
@@ -802,7 +805,7 @@ header .menu-var {
 header .menu-var .nav-logo {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #0e1283;
+  color: navy;
   padding: 0.2rem;
   border-radius: 1rem;
   animation: color 5s ease-in-out infinite;
@@ -861,9 +864,10 @@ footer {
 }
 footer div {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 footer h4 {
   width: 100%;
@@ -923,9 +927,13 @@ footer .contenedor__footer--left {
 }
 footer .contenedor__footer--left ul {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 0.2rem;
+}
+footer .contenedor__footer--left ul li {
+  padding: 0.3rem;
 }
 footer .contenedor__footer--left ul li a {
   text-decoration: none;
@@ -1059,6 +1067,9 @@ footer .contenedor__footer--left ul li a img {
   .contenedor_main__nosotros .contenedor__sucursales .contenedor__sucursales-right {
     grid-area: contenedor__sucursales-right;
   }
+  .contendedor__contacto-up .contenedor__contacto-up--text {
+    width: 350px;
+  }
 }
 @media screen and (min-width: 950px) {
   .contenedor__servicios-secundario .contenedor-card-mas_servicios .text__mas-servicios p {
@@ -1075,6 +1086,9 @@ footer .contenedor__footer--left ul li a img {
   }
   .contenedor__servicios-secundario .contenedor-card-mas_servicios .card .card-des {
     font-size: 15px;
+  }
+  .contendedor__contacto-up .contenedor__contacto-up--text {
+    width: 450px;
   }
 }
 @keyframes flotar {

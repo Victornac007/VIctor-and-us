@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 body{
     background: linear-gradient(90deg, rgb(166, 165, 229) 10%, #0e1283 100%);
     ul{
@@ -22,17 +23,8 @@ body{
         width: 100%;
         position: relative;
         .header__index-video-background{
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
+            @include background-video;
             background: url(../Media/concepto_papa08.png) no-repeat;
-            background-position: center;
-            background-size: cover;
             content: hidden;
         }
         .menu-var{
@@ -50,7 +42,7 @@ body{
             .nav-logo{
                 font-size: 1.5rem;
                 font-weight: 900;
-                color: #0e1283;
+                color: $color-primary;
                 transition: 0.6s color;
             }
             .nav-bar-menu{
@@ -150,7 +142,7 @@ body{
         position: relative;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+        @include box-shadow;
         .contenedor__home__elegirnos{
             font-weight: bold;
             backdrop-filter: blur(6px);
@@ -158,20 +150,12 @@ body{
             background-color: #f3f4f554;
         }
         .video__background{
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            background-size: cover;
+            @include background-video;
         }
         .contenedor__acordeon{
             max-width: 800px;
             margin: 5px auto;
-            box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -15px;
+            @include box-shadow;
             border-radius: 2rem;
         }
         .accordion{
@@ -293,16 +277,8 @@ body{
         border-radius: 2rem;
         position: relative;
         .contenedor__video_ubicacion{
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
+            @include background-video;
             background: url(./Media/mapa_chile.png) no-repeat;
-            background-size: cover;
         }
         .contenedor__ubicacion__backdrop{
             .contenedor__direccion_index--texto{
@@ -326,7 +302,7 @@ body{
                 margin: 1rem auto 1rem auto;
                 border-radius: 2rem;
                 border-radius: 2rem;
-                box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
+                @include box-shadow;
                 &:hover{
                     transform: scale(1.03);
                     transition: 0.3s;

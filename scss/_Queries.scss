@@ -144,6 +144,13 @@
             }
         }
     }
+    .contendedor__contacto-up{
+        .contenedor__contacto-up--text{
+            width: 350px;
+        }
+
+    }
+
 }
 @media screen and (min-width:950px){
     .contenedor__servicios-secundario{
@@ -167,7 +174,10 @@
             }
         }
     }
-}
-@media screen and (max-width:550px){
-    
+    .contendedor__contacto-up{
+        .contenedor__contacto-up--text{
+            width: 450px;
+        }
+
+    }
 }

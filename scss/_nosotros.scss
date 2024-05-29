@@ -3,17 +3,8 @@
         padding-top: 8rem;
         padding-bottom: 1rem;
         .video__background__nosotros{
-            position: absolute;
-            top:0;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            background-position: center;
-            background-size: cover;
+            @include background-video;
+            top: 0;
         }
         .contenedor__texto_nosotros{
             padding: 1rem;
@@ -22,7 +13,7 @@
             background-color: white;
             color: $color-primary;
             font-weight: bold;
-            box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+            @include box-shadow;
             font-size: 1.3rem;
             animation: flotar 3s infinite ease-in-out;
         }
@@ -47,7 +38,8 @@
                 backdrop-filter: blur(15px);
                 padding: 0.5rem;
                 background-color: #ffffffd0;
-                box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+                @include box-shadow;
+
                 p{
                     font-size: 12px;
                 }
@@ -83,7 +75,7 @@
         padding-top: 2rem;
         h2{
             font-size: 1rem;
-            background-color: rgba(0, 0, 0, 0.209);
+            background-color: rgba(0, 0, 0, 0.241);
             padding: 0.5rem;
             border-radius: 2rem;
             backdrop-filter: blur(8px);
@@ -94,7 +86,7 @@
             border-radius: 2rem;
             backdrop-filter: blur(20px);
             background-color: rgba(0, 0, 0, 0.108);
-            box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+            @include box-shadow;
             display: flex;
             flex-direction: column;
             img{
@@ -105,7 +97,7 @@
                 &:hover{
                     transform: scale(1.14);
                     transition: all 0.3s ;
-                    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+                    @include box-shadow;
                 }
             }
             p{
