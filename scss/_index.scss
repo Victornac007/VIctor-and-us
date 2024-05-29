@@ -15,7 +15,7 @@ body{
         line-height: 1.7;
     }
     .contenedor__header{
-        background-image: url(./Media/concepto_papa08.png);
+        background-image: url(../Media/concepto_papa08.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -278,7 +278,7 @@ body{
         position: relative;
         .contenedor__video_ubicacion{
             @include background-video;
-            background: url(./Media/mapa_chile.png) no-repeat;
+            background: url(../Media/Mapa_chile_horizontal.png) no-repeat;
         }
         .contenedor__ubicacion__backdrop{
             .contenedor__direccion_index--texto{
