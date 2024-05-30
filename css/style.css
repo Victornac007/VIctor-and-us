@@ -50,11 +50,7 @@ body p {
   line-height: 1.7;
 }
 body .contenedor__header {
-  background-image: url(../Media/concepto_papa08.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 900px;
+  height: 950px;
   width: 100%;
   position: relative;
 }
@@ -169,15 +165,14 @@ body .contenedor__acordeon__background__video {
   width: 100%;
   padding-top: 4rem;
   position: relative;
-  padding-top: 2rem;
   padding-bottom: 2rem;
   box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 body .contenedor__acordeon__background__video .contenedor__home__elegirnos {
   font-weight: bold;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(20px);
   padding: 1rem;
-  background-color: rgba(243, 244, 245, 0.3294117647);
+  background-color: rgba(243, 244, 245, 0.4823529412);
 }
 body .contenedor__acordeon__background__video .video__background {
   position: absolute;
@@ -198,8 +193,8 @@ body .contenedor__acordeon__background__video .contenedor__acordeon {
   border-radius: 2rem;
 }
 body .contenedor__acordeon__background__video .accordion .accordion-item .accordion-collapse .acordeon_item p {
-  background-color: rgba(255, 255, 255, 0.5490196078);
-  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.631372549);
+  backdrop-filter: blur(30px);
   border-radius: 1.5rem;
   padding: 1rem;
   font-size: large;
@@ -243,13 +238,13 @@ body .contenedor__acordeon__background__video .accordion .accordion-item .accord
 body .container__cotizar {
   background-color: orange;
   box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
-  padding: 3rem;
+  padding: 1rem;
 }
 body .container__cotizar .row .contenedor__cotizar__texto {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 1rem;
   color: white;
   font-weight: bold;
@@ -324,18 +319,17 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   padding: 1rem;
   margin: 0 auto;
   background-color: rgba(3, 1, 1, 0.523);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(20px);
   border-radius: 2rem;
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--mapa {
   width: 330px;
   height: 400px;
   margin: 1rem auto 1rem auto;
-  border-radius: 2rem;
   border-radius: 2rem;
   box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
@@ -982,6 +976,18 @@ footer .contenedor__footer--left ul li a img {
   }
 }
 @media screen and (min-width: 650px) {
+  body .contenedor__acordeon__background__video {
+    padding: 10rem 0 10rem 0;
+  }
+  body .container__cotizar {
+    padding: 5rem;
+  }
+  body .contenedor__ubicacion {
+    padding: 5rem;
+  }
+  body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto p {
+    font-size: 1.5rem;
+  }
   .contenedor__servicios-secundario .contenedor-card-mas_servicios .text__mas-servicios p {
     font-size: 2.5rem;
   }
@@ -1087,6 +1093,28 @@ footer .contenedor__footer--left ul li a img {
   }
   .contendedor__contacto-up .contenedor__contacto-up--text {
     width: 450px;
+  }
+}
+@media screen and (max-width: 550px) {
+  body .contenedor__acordeon__background__video {
+    height: 950px;
+  }
+  body .contenedor__acordeon__background__video .contenedor__home__elegirnos {
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+  }
+  body .container__cotizar {
+    height: 950px;
+  }
+  body .container__cotizar .row .contenedor__cotizar__texto {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+  body .contenedor__ubicacion {
+    height: 950px;
+  }
+  body .contenedor__ubicacion .contenedor__ubicacion__backdrop {
+    margin-top: 10rem;
   }
 }
 @keyframes flotar {

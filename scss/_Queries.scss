@@ -41,6 +41,25 @@
     }
 }
 @media screen and (min-width:650px){
+    body{
+    .contenedor__acordeon__background__video{
+        padding: 10rem 0 10rem 0;
+    }
+        .container__cotizar{
+            padding: 5rem;
+        }
+        .contenedor__ubicacion{
+            padding: 5rem;
+            .contenedor__ubicacion__backdrop{
+                .contenedor__direccion_index--texto{
+                    p{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+  
     .contenedor__servicios-secundario{
         .contenedor-card-mas_servicios{
             .text__mas-servicios{
@@ -179,5 +198,31 @@
             width: 450px;
         }
 
+    }
+}
+@media screen and (max-width:550px){
+    body{
+        .contenedor__acordeon__background__video{
+            height: 950px;
+            .contenedor__home__elegirnos{
+                margin-top: 8rem;
+                margin-bottom: 6rem;
+            }
+        }
+        .container__cotizar{
+            height: 950px;
+            .row{
+                .contenedor__cotizar__texto{
+                    margin-top: 10rem;
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+        .contenedor__ubicacion{
+            height: 950px;
+            .contenedor__ubicacion__backdrop{
+                margin-top: 10rem;
+            }
+        }
     }
 }

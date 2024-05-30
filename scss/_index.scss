@@ -15,11 +15,7 @@ body{
         line-height: 1.7;
     }
     .contenedor__header{
-        background-image: url(../Media/concepto_papa08.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 900px;
+        height: 950px;
         width: 100%;
         position: relative;
         .header__index-video-background{
@@ -138,14 +134,13 @@ body{
         width: 100%;
         padding-top: 4rem;
         position: relative;
-        padding-top: 2rem;
         padding-bottom: 2rem;
         @include box-shadow;
         .contenedor__home__elegirnos{
             font-weight: bold;
-            backdrop-filter: blur(6px);
+            backdrop-filter: blur(20px);
             padding: 1rem;
-            background-color: #f3f4f554;
+            background-color: #f3f4f57b;
         }
         .video__background{
             @include background-video;
@@ -161,8 +156,8 @@ body{
                 .accordion-collapse{
                     .acordeon_item{
                         p{
-                            background-color: #ffffff8c;
-                            backdrop-filter: blur(4px);
+                            background-color: #ffffffa1;
+                            backdrop-filter: blur(30px);
                             border-radius: 1.5rem;
                             padding: 1rem;
                             font-size: large;
@@ -211,13 +206,11 @@ body{
     .container__cotizar{
         background-color: $color-secondary;
         box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
-        padding: 3rem;
+        padding: 1rem;
         .row{
             .contenedor__cotizar__texto{
-                display: flex;
+                @include flex-center;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 padding: 1rem;
                 color: white;
                 font-weight: bold;
@@ -287,10 +280,10 @@ body{
                 padding: 1rem;
                 margin: 0 auto;
                 background-color: rgba(3, 1, 1, 0.523);
-                backdrop-filter: blur(8px);
+                backdrop-filter: blur(20px);
                 border-radius: 2rem;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     color: white;
                 }
             }
@@ -298,7 +291,6 @@ body{
                 width:  330px;
                 height: 400px;
                 margin: 1rem auto 1rem auto;
-                border-radius: 2rem;
                 border-radius: 2rem;
                 @include box-shadow;
                 &:hover{
