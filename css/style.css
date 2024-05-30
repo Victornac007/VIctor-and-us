@@ -1114,7 +1114,10 @@ footer .contenedor__footer--left ul li a img {
     height: 950px;
   }
   body .contenedor__ubicacion .contenedor__ubicacion__backdrop {
-    margin-top: 10rem;
+    margin-top: 11rem;
+  }
+  body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto p {
+    font-size: 1rem;
   }
 }
 @keyframes flotar {

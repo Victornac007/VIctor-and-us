@@ -221,7 +221,12 @@
         .contenedor__ubicacion{
             height: 950px;
             .contenedor__ubicacion__backdrop{
-                margin-top: 10rem;
+                margin-top: 11rem;
+                .contenedor__direccion_index--texto{
+                    p{
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
