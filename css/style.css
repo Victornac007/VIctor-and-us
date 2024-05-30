@@ -430,7 +430,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 .contenedor_main__nosotros .contenedor__sucursales div {
   padding: 0.7rem;
   border-radius: 2rem;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.108);
   box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
   display: flex;
@@ -1001,7 +1001,7 @@ footer .contenedor__footer--left ul li a img {
     font-size: 12px;
   }
   .contenedor_main__nosotros .contenedor__nosotros--up .video__background__nosotros {
-    content: hidden;
+    top: -20%;
   }
   .contenedor_main__nosotros .contenedor__nosotros--up .contenedor__nosotros .div--nosotros {
     max-width: 450px;
@@ -1013,13 +1013,24 @@ footer .contenedor__footer--left ul li a img {
     display: block;
   }
   .contenedor_main__nosotros .contenedor__sucursales {
+    padding: 5rem;
+  }
+  .contendedor__contacto-up .contenedor__contacto-up--text {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .contenedor_main__nosotros .contenedor__nosotros--up .video__background__nosotros {
+    top: -60%;
+  }
+  .contenedor_main__nosotros .contenedor__sucursales {
     background-image: url(../Media/chile_bosque_horizontal.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     justify-items: center;
-    padding-bottom: 3rem;
+    padding: 10rem 0 5rem 0;
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -1032,15 +1043,15 @@ footer .contenedor__footer--left ul li a img {
     grid-area: h2;
     font-size: 2.2rem;
     background-color: rgba(0, 0, 0, 0.209);
-    padding: 0.5rem;
+    padding: 0.6rem;
     border-radius: 2rem;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(50px);
   }
   .contenedor_main__nosotros .contenedor__sucursales div {
     padding: 0.7rem;
     border-radius: 2rem;
-    backdrop-filter: blur(3px);
-    background-color: rgba(0, 0, 0, 0.108);
+    backdrop-filter: blur(30px);
+    background-color: rgba(0, 0, 0, 0.319);
     box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
@@ -1071,11 +1082,6 @@ footer .contenedor__footer--left ul li a img {
   .contenedor_main__nosotros .contenedor__sucursales .contenedor__sucursales-right {
     grid-area: contenedor__sucursales-right;
   }
-  .contendedor__contacto-up .contenedor__contacto-up--text {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 950px) {
   .contenedor__servicios-secundario .contenedor-card-mas_servicios .text__mas-servicios p {
     font-size: 3rem;
   }

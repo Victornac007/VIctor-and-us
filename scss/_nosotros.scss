@@ -84,7 +84,7 @@
         div{
             padding: 0.7rem;
             border-radius: 2rem;
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(10px);
             background-color: rgba(0, 0, 0, 0.108);
             @include box-shadow;
             display: flex;
