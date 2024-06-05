@@ -381,7 +381,8 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   color: hsl(240, 100%, 25%);
   font-weight: bold;
   box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  text-align: center;
   animation: flotar 3s infinite ease-in-out;
 }
 .contenedor_main__nosotros .contenedor__nosotros--up .contenedor__nosotros {
@@ -466,7 +467,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   margin: 0 auto;
 }
 .contenedor_main__nosotros .contenedor__sucursales div img:hover {
-  transform: scale(1.14);
+  transform: scale(1.04);
   transition: all 0.3s;
   box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
