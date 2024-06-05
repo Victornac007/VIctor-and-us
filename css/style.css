@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 @keyframes flotar {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -5,7 +12,7 @@
   }
   50% {
     box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-    transform: translatey(-10px);
+    transform: translatey(-5px);
   }
   100% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -14,13 +21,13 @@
 }
 @keyframes color {
   0% {
-    color: navy;
+    color: hsl(240, 100%, 25%);
   }
   50% {
-    color: orange;
+    color: #ffa500;
   }
   100% {
-    color: navy;
+    color: hsl(240, 100%, 25%);
   }
 }
 @keyframes titilar {
@@ -80,9 +87,9 @@ body .contenedor__header .menu-var {
   z-index: 2;
 }
 body .contenedor__header .menu-var .nav-logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 900;
-  color: navy;
+  color: hsl(240, 100%, 25%);
   transition: 0.6s color;
 }
 body .contenedor__header .menu-var .nav-bar-menu:focus {
@@ -129,16 +136,18 @@ body .contenedor__header .contenedor__cards_home {
   width: 100%;
   height: 100%;
   padding: 5rem 1.5rem 5rem 1.5rem;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   align-items: flex-start;
-  font-weight: bold;
+  font-weight: bolder;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.567);
 }
-body .contenedor__header .contenedor__cards_home h3 {
+body .contenedor__header .contenedor__cards_home h2 {
+  margin-top: 20px;
   text-align: start;
 }
 body .contenedor__header .contenedor__cards_home h1 {
@@ -150,6 +159,7 @@ body .contenedor__header .contenedor__cards_home .contenedor__cards_home-text {
 body .container__home__presentacion {
   width: 100%;
   margin: 0 auto;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 body .container__home__presentacion .carousel-item .home__presentacion_texto {
   backdrop-filter: blur(6px);
@@ -236,7 +246,7 @@ body .contenedor__acordeon__background__video .accordion .accordion-item .accord
   background-position: center;
 }
 body .container__cotizar {
-  background-color: orange;
+  background-color: #ffa500;
   box-shadow: rgba(0, 0, 0, 0.878) 0px 30px 30px -20px;
   padding: 1rem;
 }
@@ -244,11 +254,13 @@ body .container__cotizar .row .contenedor__cotizar__texto {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
   flex-direction: column;
   padding: 1rem;
   color: #ffffff;
-  font-weight: bold;
-  font-size: 1.8rem;
+  font-weight: 900;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4196078431);
 }
 body .container__cotizar .row .contenedor__cotizar__texto strong {
   animation: titilar 1.5s infinite ease-in-out;
@@ -275,14 +287,14 @@ body .container__cotizar .contenedor__cotizar__form .imput_form:focus {
 body .container__cotizar .contenedor__cotizar__form .boton_form {
   width: 100%;
   font-weight: bold;
-  background: linear-gradient(45deg, orange 0%, rgb(203, 138, 108) 100%);
+  background: linear-gradient(45deg, #ffa500 0%, rgb(203, 138, 108) 100%);
   color: #ffffff;
   border-radius: 2rem;
   box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
   transition: all 0.3s ease-in-out;
 }
 body .container__cotizar .contenedor__cotizar__form .boton_form:hover {
-  background-color: #0e1283;
+  background-color: hsl(240, 100%, 25%);
   color: #ffffff;
   transform: scale(1.03);
   box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
@@ -291,6 +303,10 @@ body .container__cotizar .contenedor__cotizar__form .boton_form:hover {
 }
 body .contenedor__ubicacion {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
   background-position: center;
   background-size: cover;
   color: #ffffff;
@@ -311,11 +327,13 @@ body .contenedor__ubicacion .contenedor__video_ubicacion {
   background-position: center;
   background: url(../Media/Mapa_chile_horizontal.webp) no-repeat;
 }
-body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto {
+body .contenedor__ubicacion .contenedor__ubicacion__backdrop {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto {
+  flex-direction: column;
   padding: 1rem;
   margin: 0 auto;
   background-color: rgba(3, 1, 1, 0.523);
@@ -327,14 +345,14 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   color: #ffffff;
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--mapa {
-  width: 330px;
+  width: 280px;
   height: 400px;
-  margin: 1rem auto 1rem auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 2rem;
-  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--mapa:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   transition: 0.3s;
 }
 
@@ -360,7 +378,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   border-radius: 2rem;
   backdrop-filter: blur(13px);
   background-color: white;
-  color: navy;
+  color: hsl(240, 100%, 25%);
   font-weight: bold;
   box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
   font-size: 1.3rem;
@@ -368,18 +386,23 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 }
 .contenedor_main__nosotros .contenedor__nosotros--up .contenedor__nosotros {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   justify-items: center;
-  align-items: center;
+  padding-bottom: 2rem;
 }
 .contenedor_main__nosotros .contenedor__nosotros--up .contenedor__nosotros .content_nosotros__center {
   width: 70%;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 .contenedor_main__nosotros .contenedor__nosotros--up .contenedor__nosotros .content_nosotros__left {
   width: 40%;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 .contenedor_main__nosotros .contenedor__nosotros--up .contenedor__nosotros .content_nosotros__right {
   width: 40%;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
 }
 .contenedor_main__nosotros .contenedor__nosotros--up .contenedor__nosotros .div--nosotros {
   min-width: 150px;
@@ -468,13 +491,14 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   align-items: center;
   margin-top: 10rem;
 }
-.contenedor__servicios-principal .h2__servicios {
+.contenedor__servicios-principal .h1__servicios {
   width: 100%;
   font-weight: bolder;
-  color: orange;
+  color: #ffa500;
   font-size: 2rem;
   margin-bottom: 2rem;
   padding: 0.5rem 0 1rem 0;
+  text-align: center;
 }
 .contenedor__servicios-principal .card-container {
   width: 220px;
@@ -489,7 +513,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   z-index: -1;
   position: absolute;
   inset: 0;
-  background: linear-gradient(-45deg, orange 0%, #ff0f7b 100%);
+  background: linear-gradient(-45deg, #ffa500 0%, #ff0f7b 100%);
   transform: translate3d(0, 0, 0) scale(0.95);
   filter: blur(20px);
 }
@@ -513,9 +537,8 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   height: 100%;
   display: flex;
   align-items: center;
-  content-visibility: hideen;
   justify-content: center;
-  background: linear-gradient(-45deg, orange 0%, #ff0f7b 100%);
+  background: linear-gradient(-45deg, #ffa500 0%, #ff0f7b 100%);
   transition: scale 0.6s, rotate 0.6s, filter 1s;
 }
 .contenedor__servicios-principal .card-container .card_servicios .content_Servicios {
@@ -548,7 +571,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 }
 
 .contenedor__servicios-secundario {
-  background-color: orange;
+  background-color: #ffa500;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -582,7 +605,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 .contenedor__servicios-secundario .contenedor-card-mas_servicios .card {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 300px;
   max-width: 600px;
   height: 300px;
   max-height: 330px;
@@ -595,7 +618,6 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
-  animation: flotar 3s infinite ease-in-out;
 }
 .contenedor__servicios-secundario .contenedor-card-mas_servicios .card:hover {
   transform: translateY(-10px);
@@ -636,7 +658,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   margin: 0;
   font-size: 12px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: navy;
+  color: hsl(240, 100%, 25%);
   font-weight: bold;
   cursor: default;
 }
@@ -644,10 +666,11 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 .contenedor__clientes_imgs {
   padding-top: 10rem;
 }
-.contenedor__clientes_imgs h2 {
-  color: orange;
+.contenedor__clientes_imgs h1 {
+  color: #ffa500;
   font-weight: bold;
   font-size: 2rem;
+  text-align: center;
 }
 .contenedor__clientes_imgs p {
   color: white;
@@ -735,9 +758,11 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   flex-direction: column;
   margin-top: 10rem;
 }
-.contendedor__contacto-up h2 {
+.contendedor__contacto-up h1 {
   width: 100%;
-  color: orange;
+  color: #ffa500;
+  text-align: center;
+  font-weight: 800;
 }
 .contendedor__contacto-up .contenedor__contacto-up--text {
   background-color: rgba(255, 255, 255, 0.791);
@@ -752,7 +777,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 .contendedor__contacto-up .contenedor__contacto-up--text h4 {
   font-size: 0.8rem;
 }
-.contendedor__contacto-up .contenedor__contacto-up--text h3 {
+.contendedor__contacto-up .contenedor__contacto-up--text h2 {
   font-size: 1rem;
 }
 .contendedor__contacto-up .contenedor__contacto-up--text p {
@@ -799,7 +824,7 @@ header .menu-var {
 header .menu-var .nav-logo {
   font-size: 1.5rem;
   font-weight: 900;
-  color: navy;
+  color: hsl(240, 100%, 25%);
   padding: 0.2rem;
   border-radius: 1rem;
   animation: color 5s ease-in-out infinite;
@@ -829,7 +854,7 @@ header .menu-var .offcanvas-body .navbar-nav .nav-item .link-nav::before {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: navy;
+  background-color: hsl(240, 100%, 25%);
   visibility: hidden;
   transition: 0.3s ease-in-out;
 }
@@ -906,6 +931,7 @@ footer .contenedor__footer--right ul li img {
 }
 footer .contenedor__footer--right ul img {
   margin: 0.7rem 1rem 0.7rem 0rem;
+  border-radius: 50%;
 }
 footer .contenedor__footer--left {
   width: 40%;
@@ -934,10 +960,46 @@ footer .contenedor__footer--left ul li a {
   color: black;
   font-size: 1.3rem;
 }
-footer .contenedor__footer--left ul li a img {
-  width: 40px;
-}
 
+@media screen and (max-width: 450px) {
+  body .menu-var {
+    padding: 0;
+    margin: 15px;
+  }
+  body .menu-var .nav-logo {
+    font-size: 1.5rem;
+  }
+  body .contenedor__header .contenedor__cards_home h1 {
+    font-size: 3rem;
+  }
+  body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--mapa {
+    width: 100%;
+  }
+  .contenedor__servicios-secundario {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+  }
+  .contenedor__servicios-secundario .h2_mas__servicios {
+    font-size: 2rem;
+  }
+  .contenedor__servicios-secundario .contenedor-card-mas_servicios {
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor__servicios-secundario .contenedor-card-mas_servicios .text__mas-servicios {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .contenedor__servicios-secundario .card-left {
+    flex-direction: column-reverse;
+  }
+}
 @media screen and (min-width: 350px) {
   .card {
     width: 280px;
@@ -987,8 +1049,18 @@ footer .contenedor__footer--left ul li a img {
   body .contenedor__ubicacion {
     padding: 5rem;
   }
+  body .contenedor__ubicacion .contenedor__ubicacion__backdrop {
+    width: 100%;
+  }
+  body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto {
+    margin-right: 2rem;
+  }
   body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto p {
     font-size: 1.5rem;
+  }
+  body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--mapa {
+    width: 500px;
+    margin: 1rem auto 1rem 2rem;
   }
   .contenedor__servicios-secundario .contenedor-card-mas_servicios .text__mas-servicios p {
     font-size: 2.5rem;
@@ -1084,6 +1156,18 @@ footer .contenedor__footer--left ul li a img {
   .contenedor_main__nosotros .contenedor__sucursales .contenedor__sucursales-right {
     grid-area: contenedor__sucursales-right;
   }
+  .contenedor__servicios-principal {
+    flex-direction: row;
+  }
+  .contenedor__servicios-principal .h1__servicios {
+    font-size: 2.5rem;
+    text-shadow: 8px 10px 8px rgba(0, 0, 0, 0.69);
+  }
+  .contenedor__servicios-principal .card-container {
+    margin-right: 0.5rem;
+    width: 250px;
+    height: 400px;
+  }
   .contenedor__servicios-secundario .contenedor-card-mas_servicios .text__mas-servicios p {
     font-size: 3rem;
   }
@@ -1099,8 +1183,13 @@ footer .contenedor__footer--left ul li a img {
   .contenedor__servicios-secundario .contenedor-card-mas_servicios .card .card-des {
     font-size: 15px;
   }
+  .contendedor__contacto-up {
+    margin-bottom: 3rem;
+  }
   .contendedor__contacto-up .contenedor__contacto-up--text {
     width: 450px;
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 }
 @media screen and (max-width: 550px) {
@@ -1128,6 +1217,13 @@ footer .contenedor__footer--left ul li a img {
     font-size: 1rem;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 @keyframes flotar {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -1135,7 +1231,7 @@ footer .contenedor__footer--left ul li a img {
   }
   50% {
     box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-    transform: translatey(-10px);
+    transform: translatey(-5px);
   }
   100% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -1144,13 +1240,13 @@ footer .contenedor__footer--left ul li a img {
 }
 @keyframes color {
   0% {
-    color: navy;
+    color: hsl(240, 100%, 25%);
   }
   50% {
-    color: orange;
+    color: #ffa500;
   }
   100% {
-    color: navy;
+    color: hsl(240, 100%, 25%);
   }
 }
 @keyframes titilar {
@@ -1163,12 +1259,6 @@ footer .contenedor__footer--left ul li a img {
   100% {
     opacity: 0;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

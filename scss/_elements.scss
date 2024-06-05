@@ -129,6 +129,7 @@ footer{
             }
             img{
                 margin: 0.7rem 1rem 0.7rem 0rem;
+                border-radius: 50%;
             }
         }
     }
@@ -153,12 +154,8 @@ footer{
                     text-decoration: none;
                     color: black;
                     font-size: 1.3rem;
-                    img{
-                        width: 40px;
-                    }
                 }
             }
-
         }
     }
 }

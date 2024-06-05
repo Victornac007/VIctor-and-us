@@ -1,5 +1,11 @@
-$color-primary: navy; // Azul
-$color-secondary:orange; // naranja
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+$color-primary: hsl(240, 100%, 25%); // Azul
+$color-secondary:#ffa500; // naranja
 $color-accent: #f39c12; // Amarillo
 @keyframes flotar {
 	0% {
@@ -8,7 +14,7 @@ $color-accent: #f39c12; // Amarillo
 	}
 	50% {
 		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-10px);
+		transform: translatey(-5px);
 	}
 	100% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);

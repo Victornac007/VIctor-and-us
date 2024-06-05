@@ -18,19 +18,21 @@
             animation: flotar 3s infinite ease-in-out;
         }
         .contenedor__nosotros{
-            display: flex;
+            @include flex-center;
             flex-direction: column;
             justify-items: center;
-            align-items: center;
+            padding-bottom: 2rem;
             .content_nosotros__center {
                 width: 70%;
+                @include box-shadow;
             }
             .content_nosotros__left {
                 width: 40%; 
+                @include box-shadow;
             }
             .content_nosotros__right {
                 width: 40%; 
-    
+                @include box-shadow;
             }
             .div--nosotros{
                 min-width: 150px;
