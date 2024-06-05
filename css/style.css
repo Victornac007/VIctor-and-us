@@ -200,25 +200,25 @@ body .contenedor__acordeon__background__video .accordion .accordion-item .accord
   font-size: large;
 }
 body .contenedor__acordeon__background__video .accordion .accordion-item .accordion-collapse .contenedor__acordeon__primer--item_background {
-  background-image: url(../Media/concepto_papa07.png);
+  background-image: url(../Media/concepto_papa07.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 body .contenedor__acordeon__background__video .accordion .accordion-item .accordion-collapse .contenedor__acordeon__segundo--item_background {
-  background-image: url(../Media/concepto_papa08.png);
+  background-image: url(../Media/concepto_papa08.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 body .contenedor__acordeon__background__video .accordion .accordion-item .accordion-collapse .contenedor__acordeon__tercer--item_background {
-  background-image: url(../Media/banco-itau-01.jpeg);
+  background-image: url(../Media/banco-itau-01.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 body .contenedor__acordeon__background__video .accordion .accordion-item .accordion-collapse .contenedor__acordeon__cuarto--item_background {
-  background-image: url(../Media/Banco-itau-02.jpeg);
+  background-image: url(../Media/Banco-itau-02.webp);
   background-size: cover;
   background-position: center;
 }
@@ -230,7 +230,7 @@ body .contenedor__acordeon__background__video .accordion .accordion-item .accord
   font-size: large;
 }
 body .contenedor__acordeon__background__video .accordion .accordion-item .accordion-collapse .contenedor__acordeon__quinto--item_background {
-  background-image: url(../Media/cencosud-02.jpeg);
+  background-image: url(../Media/cencosud-02.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -246,7 +246,7 @@ body .container__cotizar .row .contenedor__cotizar__texto {
   align-items: center;
   flex-direction: column;
   padding: 1rem;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.8rem;
 }
@@ -276,14 +276,14 @@ body .container__cotizar .contenedor__cotizar__form .boton_form {
   width: 100%;
   font-weight: bold;
   background: linear-gradient(45deg, orange 0%, rgb(203, 138, 108) 100%);
-  color: white;
+  color: #ffffff;
   border-radius: 2rem;
   box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
   transition: all 0.3s ease-in-out;
 }
 body .container__cotizar .contenedor__cotizar__form .boton_form:hover {
   background-color: #0e1283;
-  color: white;
+  color: #ffffff;
   transform: scale(1.03);
   box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
   background: linear-gradient(45deg, rgb(58, 64, 177) 0%, rgb(56, 209, 222) 100%);
@@ -293,7 +293,7 @@ body .contenedor__ubicacion {
   width: 100%;
   background-position: center;
   background-size: cover;
-  color: white;
+  color: #ffffff;
   padding: 1rem;
   border-radius: 2rem;
   position: relative;
@@ -309,7 +309,7 @@ body .contenedor__ubicacion .contenedor__video_ubicacion {
   z-index: -1;
   background-size: cover;
   background-position: center;
-  background: url(../Media/Mapa_chile_horizontal.png) no-repeat;
+  background: url(../Media/Mapa_chile_horizontal.webp) no-repeat;
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto {
   display: flex;
@@ -324,7 +324,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--texto p {
   font-size: 1.2rem;
-  color: white;
+  color: #ffffff;
 }
 body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direccion_index--mapa {
   width: 330px;
@@ -408,11 +408,11 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   display: none;
 }
 .contenedor_main__nosotros .contenedor__sucursales {
-  background-image: url(../Media/chile_bosque_vertical.png);
+  background-image: url(../Media/chile_bosque_vertical.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: #ffffff;
   justify-items: center;
   display: flex;
   flex-direction: column;
@@ -544,7 +544,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   font-weight: 700;
 }
 .contenedor__servicios-principal .card-container .card03 .content_Servicios {
-  color: white;
+  color: #ffffff;
 }
 
 .contenedor__servicios-secundario {
@@ -560,7 +560,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   width: 100%;
   text-align: center;
   font-weight: bolder;
-  color: white;
+  color: #ffffff;
 }
 .contenedor__servicios-secundario .contenedor-card-mas_servicios {
   width: 100%;
@@ -574,7 +574,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   justify-content: center;
   font-size: 1.3rem;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
   margin: 10px;
   text-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
   filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.2666666667));
@@ -613,7 +613,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   justify-content: center;
 }
 .contenedor__servicios-secundario .contenedor-card-mas_servicios .card .container-img-servicio06 {
-  background-image: url(../Media/concepto_papa07.png);
+  background-image: url(../Media/concepto_papa07.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -683,13 +683,13 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   background-repeat: no-repeat;
 }
 .contenedor__clientes_imgs .card_servicios_tops .red {
-  background-image: url(../Media/concepto_papa09.png);
+  background-image: url(../Media/concepto_papa09.webp);
 }
 .contenedor__clientes_imgs .card_servicios_tops .blue {
-  background-image: url(../Media/cencosud-02.jpeg);
+  background-image: url(../Media/cencosud-02.webp);
 }
 .contenedor__clientes_imgs .card_servicios_tops .green {
-  background-image: url(../Media/banco-itau-01.jpeg);
+  background-image: url(../Media/banco-itau-01.webp);
 }
 .contenedor__clientes_imgs .card_servicios_tops .card_servicios_top {
   display: flex;
@@ -846,7 +846,7 @@ header .menu-var .offcanvas-body .navbar-nav .nav-item .active::before {
 }
 
 footer {
-  background-image: url(../Media/concepto_papa11.png);
+  background-image: url(../Media/concepto_papa11.webp);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -1026,11 +1026,11 @@ footer .contenedor__footer--left ul li a img {
     top: -60%;
   }
   .contenedor_main__nosotros .contenedor__sucursales {
-    background-image: url(../Media/chile_bosque_horizontal.png);
+    background-image: url(../Media/chile_bosque_horizontal.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: #ffffff;
     justify-items: center;
     padding: 10rem 0 5rem 0;
     display: grid;

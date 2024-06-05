@@ -164,25 +164,25 @@ body{
                         }
                     }
                     .contenedor__acordeon__primer--item_background{
-                        background-image: url(../Media/concepto_papa07.png);
+                        background-image: url(../Media/concepto_papa07.webp);
                         background-repeat:no-repeat;
                         background-size: cover;
                         background-position: center;
                     }
                     .contenedor__acordeon__segundo--item_background{
-                        background-image: url(../Media/concepto_papa08.png);
+                        background-image: url(../Media/concepto_papa08.webp);
                         background-repeat:no-repeat;
                         background-size: cover;
                         background-position: center;
                     }
                     .contenedor__acordeon__tercer--item_background{
-                        background-image: url(../Media/banco-itau-01.jpeg);
+                        background-image: url(../Media/banco-itau-01.webp);
                         background-repeat:no-repeat;
                         background-size: cover;
                         background-position: center;
                     }
                     .contenedor__acordeon__cuarto--item_background{
-                        background-image: url(../Media/Banco-itau-02.jpeg);
+                        background-image: url(../Media/Banco-itau-02.webp);
                         background-size: cover;
                         background-position: center;
                         p{
@@ -194,7 +194,7 @@ body{
                         }
                     }
                     .contenedor__acordeon__quinto--item_background{
-                        background-image: url(../Media/cencosud-02.jpeg);
+                        background-image: url(../Media/cencosud-02.webp);
                         background-repeat:no-repeat;
                         background-size: cover;
                         background-position: center;
@@ -212,7 +212,7 @@ body{
                 @include flex-center;
                 flex-direction: column;
                 padding: 1rem;
-                color: white;
+                color: #ffffff;
                 font-weight: bold;
                 font-size: 1.8rem;
                 strong{
@@ -244,13 +244,13 @@ body{
                 width: 100%;
                 font-weight: bold;
                 background: linear-gradient(45deg, $color-secondary 0%, rgb(203, 138, 108) 100%);
-                color: white;
+                color: #ffffff;
                 border-radius: 2rem;
                 box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
                 transition: all 0.3s ease-in-out;
                 &:hover{
                     background-color: #0e1283;
-                    color: white;
+                    color: #ffffff;
                     transform: scale(1.03);
                     box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
                     background: linear-gradient(45deg, rgb(58, 64, 177) 0%, rgb(56, 209, 222) 100%);
@@ -263,13 +263,13 @@ body{
         width: 100%;
         background-position: center;
         background-size: cover;
-        color: white;
+        color: #ffffff;
         padding: 1rem;
         border-radius: 2rem;
         position: relative;
         .contenedor__video_ubicacion{
             @include background-video;
-            background: url(../Media/Mapa_chile_horizontal.png) no-repeat;
+            background: url(../Media/Mapa_chile_horizontal.webp) no-repeat;
         }
         .contenedor__ubicacion__backdrop{
             .contenedor__direccion_index--texto{
@@ -284,7 +284,7 @@ body{
                 border-radius: 2rem;
                 p{
                     font-size: 1.2rem;
-                    color: white;
+                    color: #ffffff;
                 }
             }
             .contenedor__direccion_index--mapa{
