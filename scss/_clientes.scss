@@ -43,6 +43,7 @@
             border: 1px solid rgba(144, 161, 255, 0.171);
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
         } 
         .red{
             background-image: url(../Media/concepto_papa09.webp);
@@ -52,6 +53,42 @@
         }
         .green{
             background-image: url(../Media/banco-itau-01.webp);
+        }
+        .card_servicios-sodimac{
+            background-image: url(../Media/Icon-Sodimac.webp);
+        }
+        .card_servicios-sport_life{
+            background-image: url(../Media/icon-sportlife.webp);
+        }
+        .card_servicios-tottus{
+            background-image: url(../Media/icon-tottus.webp);
+        }
+        .card_servicios-maxik{
+            background-image: url(../Media/icon-maxik.webp);
+        }
+        .card_servicios-santa_isabel{
+            background-image: url(../Media/icon-santa_isabel.webp);
+        }
+        .card_servicios-falabella{
+            background-image: url(../Media/icon-falabella.webp);
+        }
+        .card_servicios-open_plaza{
+            background-image: url(../Media/icon-open_plaza.webp);
+        }
+        .card_servicios-paris{
+            background-image: url(../Media/icon-paris.webp);
+        }
+        .card_servicios-ripley{
+            background-image: url(../Media/icon-ripley.webp);
+        }
+        .card_servicios-preunic{
+            background-image: url(../Media/icon-preunic.webp);
+        }
+        .card_servicios-hites{
+            background-image: url(../Media/icon-hites.webp);
+        }
+        .card_servicios-itau{
+            background-image: url(../Media/icon-itau.webp);
         }
         .card_servicios_top{
             display: flex;
@@ -82,8 +119,8 @@
                 transform: scale(1.1, 1.1);
             }
             .tip{
-                color: white;
-                backdrop-filter: blur(50px);
+                color: #fffdfd;
+                backdrop-filter: blur(5px);
                 text-align: center;
                 font-size: 1rem;
                 font-weight: 700;

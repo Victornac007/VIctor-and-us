@@ -705,6 +705,7 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   border: 1px solid rgba(144, 161, 255, 0.171);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .contenedor__clientes_imgs .card_servicios_tops .red {
   background-image: url(../Media/concepto_papa09.webp);
@@ -714,6 +715,42 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
 }
 .contenedor__clientes_imgs .card_servicios_tops .green {
   background-image: url(../Media/banco-itau-01.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-sodimac {
+  background-image: url(../Media/Icon-Sodimac.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-sport_life {
+  background-image: url(../Media/icon-sportlife.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-tottus {
+  background-image: url(../Media/icon-tottus.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-maxik {
+  background-image: url(../Media/icon-maxik.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-santa_isabel {
+  background-image: url(../Media/icon-santa_isabel.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-falabella {
+  background-image: url(../Media/icon-falabella.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-open_plaza {
+  background-image: url(../Media/icon-open_plaza.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-paris {
+  background-image: url(../Media/icon-paris.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-ripley {
+  background-image: url(../Media/icon-ripley.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-preunic {
+  background-image: url(../Media/icon-preunic.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-hites {
+  background-image: url(../Media/icon-hites.webp);
+}
+.contenedor__clientes_imgs .card_servicios_tops .card_servicios-itau {
+  background-image: url(../Media/icon-itau.webp);
 }
 .contenedor__clientes_imgs .card_servicios_tops .card_servicios_top {
   display: flex;
@@ -745,8 +782,8 @@ body .contenedor__ubicacion .contenedor__ubicacion__backdrop .contenedor__direcc
   transform: scale(1.1, 1.1);
 }
 .contenedor__clientes_imgs .card_servicios_tops .card_servicios_top .tip {
-  color: white;
-  backdrop-filter: blur(50px);
+  color: #fffdfd;
+  backdrop-filter: blur(5px);
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
